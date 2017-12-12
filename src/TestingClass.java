@@ -1,4 +1,3 @@
-import java.lang.Math;
 public class TestingClass{
 
     public static void main(String args[]) {
@@ -94,12 +93,83 @@ public class TestingClass{
        >=   greater than or equal  3 >= 2      2 >= 3
 
        */
-        //System.out.print prints out text, but doesn't move it to the next line
+        //void print(String x) || prints out text, but doesn't move cursor to the next line
         System.out.print("System.out.print test");
         System.out.print(" This is a different method on the same line");
-        //You can use System.out.println With a blank variables space so that it just moves the cursor to the next line
+        //void println(String x) || You can use System.out.println With a blank variables space so that it just moves the cursor to the next line
         System.out.println();
         System.out.println("System.out.println test");
+        System.out.println();
+        //NOTE: Any type of data can be used, and will be automatically converted to string
+        //Functions in Java's Math library
+        //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //12/12/17
+        double a;
+        double b;
+        double theta;
+        double ratio;
+        double result;
+        //double abs(double a) || returns the absolute value of a
+        a = -1;
+        System.out.println("a: " + a);
+        result = Math.abs(a);
+        System.out.println("The absolute value of a: " + result);
+        System.out.println();
+        //double max(double a, double b) || returns the maximum of a and b
+        a = 2;
+        b = 5;
+        System.out.println("a: " + a +", b: " + b);
+        result = Math.max(a, b);
+        System.out.println("The maximum of a and b: " + result);
+        System.out.println();
+        //double min(double a, double b) || returns the minimum of a and b
+        a = 4;
+        b = 6;
+        System.out.println("a: " + a + ", b: " + b);
+        result = Math.min(a, b);
+        System.out.println("The minimum of a and b: " + result);
+        System.out.println();
+        //NOTE: These functions are also defined  for int, long, and float
+        //NOTE: To use trig functions, you must convert angles to radians. Use toDegrees() and toRadians() to convert
+        //double sin(double theta) || Takes the sine of theta
+        theta = 22; //Degrees
+        System.out.println("theta: " + theta + " degrees");
+        theta = Math.toRadians(theta); //Radians
+        System.out.println("theta: " + theta + " radians");
+        result = Math.sin(theta);
+        System.out.println("Sine of theta: " + result);
+        System.out.println();
+        //double asin(double ratio) || returns the inverse sine of the ratio
+        ratio = 0.4;
+        System.out.println("ratio: " + ratio);
+        result = Math.asin(ratio);
+        System.out.println("Inverse sine of the ratio (radians): " + result + " radians");
+        result = Math.toDegrees(ratio);
+        System.out.println("Inverse sine of the ratio (degrees): " + result + " degrees");
+        System.out.println();
+        //double cos(double theta) || Take the cosine of theta
+        theta = 44; //Degrees
+        System.out.println("theta: " + theta + " degrees");
+        theta = Math.toRadians(theta); //Radians
+        System.out.println("theta: " + theta + " radians");
+        result = Math.cos(theta);
+        System.out.println("Cosine of theta: " + result);
+        System.out.println();
+        //double acos(double ratio) || returns the inverse cosine of the ratio
+        ratio = 0.35;
+        System.out.println("ratio: " + ratio);
+        result = Math.asin(ratio);
+        System.out.println("Inverse cosine of the ratio (radians): " + result + " radians");
+        result = Math.toDegrees(result);
+        System.out.println("Inverse cosine of the ratio (degrees): " + result + " degrees");
+        System.out.println();
+        //double tan(double theta)
+        theta = 45;
+        System.out.println("theta: " + theta + " degrees");
+        theta = Math.toRadians(theta);
+        System.out.println("theta: " + theta + " radians");
+        result = Math.tan(theta);
+        System.out.println("Tangeant of theta: " + result);
         System.out.println();
 
     }
