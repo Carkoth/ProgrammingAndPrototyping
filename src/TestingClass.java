@@ -233,16 +233,86 @@ public class TestingClass{
         longResult = Long.parseLong(s);
         System.out.println("String converted to a long: " + longResult);
         System.out.println();
+        //12/14/17
+        //p.32
         /*
 
         expression          expression type         expression value
         -------------------------------------------------------------
-        "1234" + 99             String                  "123499"
-        Integer.parseInt("123") int                        123
-        (int) 2.71828           int                         2
-
+        "1234" + 99               String                  "123499"
+        Integer.parseInt("123")   int                        123
+        (int) 2.71828             int                         2
+        Math.round(2.71828)       long                        3
+        (int) Math.round(2.71828) int                         3
+        (int) Math.round(3.13159) int                         3
+        11 * 0.3                  double                     3.3
+        (int) 11 * 0.3            double                     3.3
+        11 * (int) 0.3            int                         0
+        (int) (11 * 0.3)          int                         3
 
          */
+        //pg 46
+        // if (<boolean expression>) { <statements> } || if the statement is true, then rune the code
+        a = 2;
+        b = 1;
+        System.out.println("a: " + a + ", b: " + b);
+        if (a > b) {
+
+            System.out.println("The statement is true");
+
+        }
+        System.out.println();
+        //p. 47
+        /*
+        0
+        if (<boolean expression>) {<statements true>}
+        else {<statements false>)
+
+        If the statement is true, then it will run the code. If it is false, then it will run the code in the else block
+
+        */
+        a = 2;
+        b = 1;
+        System.out.println("a: " + a + ", b: " + b);
+        if (a < b) {
+
+            System.out.println("The statement is true");
+
+        }
+        else {
+
+            System.out.println("The statement is false");
+
+        }
+        System.out.println();
+        //p. 49
+        //while (<boolean expression>) {<statements>} || If the statement is true, execute the statements. Then check if it is is still true, and if it run it once again. This will continue as long as the statement is true
+        a = 1;
+        while (a <= 5) {
+
+            System.out.println("a is " + a + ".");
+            a = a + 1;
+
+        }
+        System.out.println();
+        //p. 55
+        /*
+
+        for (<initialize>; <boolean expression>; <increment>) {
+
+        <statements>
+        <increment>;
+
+        }
+
+        You create a variable, use the variable in a boolean expression, and then set the increment of the variable
+
+         */
+        for (int i = 1; i <= 10; i++) {
+
+            System.out.println("Hello " + i);
+
+        }
 
     }
 
