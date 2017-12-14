@@ -1,3 +1,6 @@
+import static java.lang.Math.E;
+import static java.lang.Math.PI;
+
 public class TestingClass{
 
     public static void main(String args[]) {
@@ -104,73 +107,142 @@ public class TestingClass{
         //Functions in Java's Math library
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         //12/12/17
+        //pg. 29
         double a;
         double b;
         double theta;
         double ratio;
-        double result;
+        double doubleResult;
+        int intResult;
+        long longResult;
+        String s;
+        //Math Library
         //double abs(double a) || returns the absolute value of a
         a = -1;
         System.out.println("a: " + a);
-        result = Math.abs(a);
-        System.out.println("The absolute value of a: " + result);
+        doubleResult = Math.abs(a);
+        System.out.println("The absolute value of a: " + doubleResult);
         System.out.println();
         //double max(double a, double b) || returns the maximum of a and b
         a = 2;
         b = 5;
         System.out.println("a: " + a +", b: " + b);
-        result = Math.max(a, b);
-        System.out.println("The maximum of a and b: " + result);
+        doubleResult = Math.max(a, b);
+        System.out.println("The maximum of a and b: " + doubleResult);
         System.out.println();
         //double min(double a, double b) || returns the minimum of a and b
         a = 4;
         b = 6;
         System.out.println("a: " + a + ", b: " + b);
-        result = Math.min(a, b);
-        System.out.println("The minimum of a and b: " + result);
+        doubleResult = Math.min(a, b);
+        System.out.println("The minimum of a and b: " + doubleResult);
         System.out.println();
         //NOTE: These functions are also defined  for int, long, and float
-        //NOTE: To use trig functions, you must convert angles to radians. Use toDegrees() and toRadians() to convert
-        //double sin(double theta) || Takes the sine of theta
+        //double sin(double theta) || returns the sine ratio of theta
         theta = 22; //Degrees
         System.out.println("theta: " + theta + " degrees");
         theta = Math.toRadians(theta); //Radians
         System.out.println("theta: " + theta + " radians");
-        result = Math.sin(theta);
-        System.out.println("Sine of theta: " + result);
+        doubleResult = Math.sin(theta);
+        System.out.println("Sine of theta: " + doubleResult);
         System.out.println();
         //double asin(double ratio) || returns the inverse sine of the ratio
         ratio = 0.4;
         System.out.println("ratio: " + ratio);
-        result = Math.asin(ratio);
-        System.out.println("Inverse sine of the ratio (radians): " + result + " radians");
-        result = Math.toDegrees(ratio);
-        System.out.println("Inverse sine of the ratio (degrees): " + result + " degrees");
+        doubleResult = Math.asin(ratio);
+        System.out.println("Inverse sine of the ratio (radians): " + doubleResult + " radians");
+        doubleResult = Math.toDegrees(ratio);
+        System.out.println("Inverse sine of the ratio (degrees): " + doubleResult + " degrees");
         System.out.println();
-        //double cos(double theta) || Take the cosine of theta
+        //double cos(double theta) || returns the cosine ratio of theta
         theta = 44; //Degrees
         System.out.println("theta: " + theta + " degrees");
         theta = Math.toRadians(theta); //Radians
         System.out.println("theta: " + theta + " radians");
-        result = Math.cos(theta);
-        System.out.println("Cosine of theta: " + result);
+        doubleResult = Math.cos(theta);
+        System.out.println("Cosine of theta: " + doubleResult);
         System.out.println();
         //double acos(double ratio) || returns the inverse cosine of the ratio
-        ratio = 0.35;
+        ratio = 0.5;
         System.out.println("ratio: " + ratio);
-        result = Math.asin(ratio);
-        System.out.println("Inverse cosine of the ratio (radians): " + result + " radians");
-        result = Math.toDegrees(result);
-        System.out.println("Inverse cosine of the ratio (degrees): " + result + " degrees");
+        doubleResult = Math.asin(ratio);
+        System.out.println("Inverse cosine of the ratio (radians): " + doubleResult + " radians");
+        doubleResult = Math.toDegrees(doubleResult);
+        System.out.println("Inverse cosine of the ratio (degrees): " + doubleResult + " degrees");
         System.out.println();
-        //double tan(double theta)
+        //double tan(double theta) || returns the tangent ratio of theta
         theta = 45;
         System.out.println("theta: " + theta + " degrees");
         theta = Math.toRadians(theta);
         System.out.println("theta: " + theta + " radians");
-        result = Math.tan(theta);
-        System.out.println("Tangeant of theta: " + result);
+        doubleResult = Math.tan(theta);
+        System.out.println("Tangeant of theta: " + doubleResult);
         System.out.println();
+        //12/13/17
+        //double atan(double ratio) || returns the inverse tangent of theta
+        ratio = 0.5;
+        System.out.println("ratio: " + ratio);
+        doubleResult = Math.atan(ratio);
+        System.out.println("Inverse tangeant of the ratio (radians): " + doubleResult);
+        doubleResult = Math.toDegrees(ratio);
+        System.out.println("Inverse tangeant of the ratio (degrees): " + doubleResult);
+        System.out.println();
+        //NOTE: To use trig functions, you must convert angles to radians. Use toDegrees() and toRadians() to convert
+        //double exp(double a) DON'T KNOW YET
+        //double log(double a) DON'T KNOW YET
+        //double pow(double a, double b) || raise a to the bth power (a^b)
+        a = 2;
+        b = 3;
+        System.out.println("a: " + a + ", b: " + b);
+        doubleResult = Math.pow(a, b);
+        System.out.println("a raised to the bth power: " + doubleResult);
+        System.out.println();
+        //long round(double a) || round to the nearest integer
+        a = 2.51;
+        System.out.println("a: " + a);
+        longResult = Math.round(a);
+        System.out.println("a rounded to the nearest integer: " + longResult);
+        System.out.println();
+        //double random() || random number between 0 and 1
+        doubleResult = Math.random();
+        System.out.println("Random number between 0 and 1: " + doubleResult);
+        System.out.println();
+        //double E || the value of e (constant)
+        a = E;
+        System.out.println("E: " + a);
+        System.out.println();
+        //double PI || the value of pi (constant)
+        a = PI;
+        System.out.println("PI: " + a);
+        System.out.println();
+        //int Integer.parseInt(String s) || convert s to an int value
+        s = "123";
+        System.out.println("My string: " + s);
+        intResult = Integer.parseInt(s);
+        System.out.println("String converted to an integer: " + intResult);
+        System.out.println();
+        //double Double.parseDouble(String s) || convert s to a double value
+        s = "1.23";
+        System.out.println("My string: " + s);
+        doubleResult = Double.parseDouble(s);
+        System.out.println("String converted to a double: " + doubleResult);
+        System.out.println();
+        //int Long.parseLong(String s) || convert s to a long value
+        s = "3000000000";
+        System.out.println("My string: " + s);
+        longResult = Long.parseLong(s);
+        System.out.println("String converted to a long: " + longResult);
+        System.out.println();
+        /*
+
+        expression          expression type         expression value
+        -------------------------------------------------------------
+        "1234" + 99             String                  "123499"
+        Integer.parseInt("123") int                        123
+        (int) 2.71828           int                         2
+
+
+         */
 
     }
 
