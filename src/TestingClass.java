@@ -6,7 +6,7 @@ public class TestingClass{
     public static void main(String args[]) {
 
         //Website: http://www.cs.princeton.edu/IntroProgramming
-        //12/8;17
+        //DATE 12/8/17
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         // Pg. 15
         //Integers, declared as int, are numbers such as 00, -12, 2147483647, and so on. There are no decimals in integers
@@ -77,11 +77,19 @@ public class TestingClass{
         System.out.print("Using the ! operator: ");
         System.out.println(!booleanOne);
         System.out.println();
-        // 12/11/17
+        // DATE 12/11/17
         //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         //Characters, declared as char are any one symbol on the keyboard. ex: A, 1, %, and \n. You use '' around the characters to identify them as charaters
         char characterVariable = 'A';
         System.out.println("My Character: " + characterVariable);
+        System.out.println();
+        //Strings, are sequences of characters. ex: "AB" "Hello" "2.5"
+        //Common operators: +, used to add two strings together
+        String stringVariableA = "This is my first string";
+        System.out.println(stringVariableA);
+        String stringVariableB = "and this is my second string";
+        System.out.println(stringVariableB);
+        System.out.println(stringVariableA + " " + stringVariableB);
         System.out.println();
         //Pg. 28
         /*
@@ -106,7 +114,8 @@ public class TestingClass{
         //NOTE: Any type of data can be used, and will be automatically converted to string
         //Functions in Java's Math library
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        //12/12/17
+        //DATE 12/12/17
+        //----------------------------------------------------------------------------------------------------------------------
         //pg. 29
         double a;
         double b;
@@ -178,7 +187,8 @@ public class TestingClass{
         doubleResult = Math.tan(theta);
         System.out.println("Tangeant of theta: " + doubleResult);
         System.out.println();
-        //12/13/17
+        //DATE 12/13/17
+        //----------------------------------------------------------------------------------------------------------------------------
         //double atan(double ratio) || returns the inverse tangent of theta
         ratio = 0.5;
         System.out.println("ratio: " + ratio);
@@ -233,7 +243,8 @@ public class TestingClass{
         longResult = Long.parseLong(s);
         System.out.println("String converted to a long: " + longResult);
         System.out.println();
-        //12/14/17
+        //DATE 12/14/17
+        //--------------------------------------------------------------------------------------------------------------
         //p.32
         /*
 
