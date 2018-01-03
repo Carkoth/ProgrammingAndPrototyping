@@ -324,6 +324,14 @@ public class TestingClass{
             System.out.println("Hello " + i);
 
         }
+        //DATE 1/3/2018 -- Happy new year!
+        //--------------------------------------------------------------------------------------------------------------
+        /*
+
+        We modify variables a lot in java, so it's useful to have several short hand notations. For example, here are all the one's that increment the value of the variable by 1
+        i = i + 1   i++;   ++i;   i += 1
+
+         */
 
     }
 
