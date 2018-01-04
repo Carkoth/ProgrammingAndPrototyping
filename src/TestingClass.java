@@ -96,7 +96,7 @@ public class TestingClass{
 
        op          meaning         true        false
        ---------------------------------------------
-       ==          equal           2 == 2      2 = 3
+       ==          equal           2 == 2      2 == 3
        !-          not equal       3 != 2     2 != 2
        <           less than       2 < 13      2 < 2
        <-      less than or equal  2 <= 2     3 <= 2
