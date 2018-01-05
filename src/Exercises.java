@@ -5,6 +5,7 @@
 
 
     }
+    //DATE 1/3/2018
     //Exercise 1.1.1
      //  Write a program that prints the "Hello, World" message 10 times.
     public void oneOneOne() {
@@ -46,6 +47,7 @@
       d. Nothing happened
 
       */
+    //DATE 1/4/2018
      /*
 
      Exercise 1.2.1

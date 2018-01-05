@@ -1,7 +1,7 @@
 import static java.lang.Math.E;
 import static java.lang.Math.PI;
 
-public class TestingClass{
+public class Notes {
 
     public static void main(String args[]) {
 
