@@ -112,6 +112,7 @@
             b. System.out.println(2 + 3 + "bc");
             c. System.out.println((2 + 3) + "bc");
             d. System.out.println("bc" + 2 + 3);
+        Explain each outcome.
 
      a. 2bc, there are only two things and it can't combine 2 and "bc"
      b. 5bc, it sees the 2 + 3 before seeing the "bc"
@@ -119,9 +120,57 @@
      d. bc23, it sees the string before the numbers, making it think the numbers are strings
 
       */
+     //DATE 1/8/2018
+     /*
+
+     Exercise 1.2.9
+        What do each of the following print?
+            a. System.out.println('b');
+            b. System.out.println('b' + 'c');
+            c. System.out.println((char) ('a' + 4));
+        Explain each outcome.
+
+        a. It prints 'b', as it is simply printing a character.
+        b. It prints 197 because it's taking the two ASCII values of the characters and adding them
+        c. It prints out 'e' because the ASCII value for 'a' is 97, and 97 + 4 is 101, and 101 is the ASCII value for 'e'
+
+      */
+     /*
+
+     Exercise 1.2.10
+        Suppose that a is declared as int a = 2147483647 (or equivalently, Integer.MAX_VALUE). What do each of the following print?
+            a. System.out.println(a);
+            b. System.out.println(a + 1);
+            c. System.out.println(2 - a);
+            d. System.out.println(-2 - a);
+            e. System.out.println(2 * a);
+            f. System.out.println(4 * a);
+        Explain each outcome.
+
+        a. It prints 2147483647 because it's simply printing the value of the variable with no other processes.
+        b. It prints -2147483648 because it's already at the maximum value, so it switches over to negatives, and -2147483648 is the minimum value for an integer.
+        c. It prints -2147483645 because it's effectively two minus the max int value, or the negative max int number plus two
+        d. It prints 2147483647 because it surpasses the minimum int number of -2147483648 and switches over to the maximum int value
+        e. It prints -2 because it switches over twice and leaves a remainder of sorts
+        f. It prints -4 because this time it switches over 4 times a leaves a remainder
+
+      */
+     /*
+
+     Exercise 1.2.10
+        Suppose that a is declared as double a = 3.14159. What do each of the following do?
+            a. System.out.println(a);
+            b. System.out.println(a + 1);
+            c. System.out.println(8 / (int) a);
+            d. System.out.println(8 / a);
+            e. System.out.println((int) (8 / a));
+
+      */
     public static void main(String args[]) {
 
         new Exercises();
+        double a = 3.14159;
+        System.out.println();
 
     }
 
