@@ -5,6 +5,11 @@
 
 
     }
+    public void test(int N) {
+
+
+
+    }
     //DATE 1/3/2018
     //Exercise 1.1.1
      //  Write a program that prints the "Hello, World" message 10 times.
@@ -117,7 +122,6 @@
     public static void main(String args[]) {
 
         new Exercises();
-        System.out.println("bc" + 2 + 3);
 
     }
 
