@@ -1,7 +1,7 @@
 import static java.lang.Math.E;
 import static java.lang.Math.PI;
 
-public class Notes {
+public class  Notes {
 
     public static void main(String args[]) {
 
@@ -97,7 +97,7 @@ public class Notes {
        op          meaning         true        false
        ---------------------------------------------
        ==          equal           2 == 2      2 == 3
-       !-          not equal       3 != 2     2 != 2
+       !=          not equal       3 != 2     2 != 2
        <           less than       2 < 13      2 < 2
        <-      less than or equal  2 <= 2     3 <= 2
        >           greater than    13 > 2      2 > 13

@@ -5,7 +5,7 @@
 
 
     }
-    public void test(int N) {
+    public void test() {
 
 
 
@@ -157,7 +157,7 @@
       */
      /*
 
-     Exercise 1.2.10
+     Exercise 1.2.11
         Suppose that a is declared as double a = 3.14159. What do each of the following do?
             a. System.out.println(a);
             b. System.out.println(a + 1);
@@ -165,12 +165,77 @@
             d. System.out.println(8 / a);
             e. System.out.println((int) (8 / a));
 
+            a. It prints 3.14159 because it's simply printing the value
+            b. It prints 4.14159 because it's adding 1 to 3.14159
+            c. It prints 2, because it's typecasting a to an int, meaning it becomes 3, and it divides 8 by 3, meaning that you would get two, because 3 only goes into 8 twice and we are using ints so there is no decimal
+            d. It prints 2.5464812403910124, because it divides 8 by three and because it's a double it gives a decimal.
+            e. It prints 2, because it originally gets 2.5464812403910124 (8/a), and then it chops the decimal, giving 2
+
+
       */
+     /*
+
+     Exercise 1.2.12
+        Describe what happens if you write sqrt instead of Math.sqrt in program 1.2.12 (program given)
+
+        It cannot resolve the symbol "sqrt", because we are not calling the class, therefore it's looking for the function in your class.
+
+      */
+     /*
+
+     Exercise 1.2.13
+        What is the value of (Math.sqrt(2) * Math.sqrt(2) == 2)?
+
+     It should be true, but because the square root of two is an irrational number, it is not exactly two.
+
+      */
+     public void oneTwoTwelve(String argB, String argC) {
+
+         double b = Double.parseDouble(argB);
+         double c = Double.parseDouble(argC);
+         double discriminant = b * b - 4.0 * c;
+         double d = Math.sqrt(discriminant);
+         System.out.println((-b + d) / 2.0);
+         System.out.println((-b - d) / 2.0);
+
+     }
+     /*
+
+     Exercise 1.2.14
+
+        Write a program that takes two positive integers as arguments and prints true if either evenly divides over the other.
+f
+      */
+     public void oneTwoFourteen(int intOne, int intTwo) {
+
+         if ((intOne <= 0) || (intTwo <= 0)) {
+
+             System.out.println("Please give POSITIVE integers.");
+             return;
+
+         }
+         if (((intOne % intTwo) == 0) || ((intTwo % intOne) == 0)) {
+
+             System.out.println(true);
+
+         }
+
+     }
+     /*
+
+     Exercise 1.2.15
+
+        Write a program that takes three positive integers as command line arguments and prints true if any one of them is greater than or equal to the sum of the other two and false otherwise. (Note: This computation tests whether the three numbers couldbe the lengths of the sides of some triangle.)
+
+      */
+     public void oneTwoFifteen(int sideOne, int sideTwo, int sideThree) {
+
+
+
+     }
     public static void main(String args[]) {
 
         new Exercises();
-        double a = 3.14159;
-        System.out.println();
 
     }
 
