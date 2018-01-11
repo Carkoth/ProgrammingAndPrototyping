@@ -1,4 +1,7 @@
- public class Exercises {
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Exercises {
 
     public Exercises() {
 
@@ -221,6 +224,7 @@ f
          }
 
      }
+     //DATE 1/10/2018
      /*
 
      Exercise 1.2.15
@@ -230,9 +234,131 @@ f
       */
      public void oneTwoFifteen(int sideOne, int sideTwo, int sideThree) {
 
+        if ((sideOne <= 0) || (sideTwo <= 0) || (sideThree <= 0)) {
 
+            System.out.println("Please give POSITIVE integer.");
+            return;
+
+        }
+        if ((sideOne >= (sideTwo + sideThree)) || (sideTwo >= (sideOne + sideThree)) || (sideThree >= (sideOne + sideTwo))) {
+
+            System.out.println(true);
+
+        }
+        else {
+
+            System.out.println(false);
+
+        }
 
      }
+     /*
+
+     Exercise 1.2.16
+
+        A physics student gets unexpected results when using the following code to compute values according to the formula F = Gm1m2 / r^2
+            F = G * mass1 * mass2 / r * r;
+
+        He didn't use order of operations correctly, as it will divide mass2 by r before multiplying r by r, so he needs to put "r * r" into parentheses
+
+      */
+     public void oneTwoSixteen(double G, double mass1, double mass2, double r) {
+
+         double F;
+         F = G * mass1 * mass2 / (r * r);
+         System.out.println(F);
+
+     }
+     /*
+
+     Exercise 1.2.17
+
+        Give the value of a after the execution of each of the following sequences.
+
+        (1)            (2)                    (3)
+
+        int a = 1;     boolean a = true;      int a = 2;
+        a = a + a;     a = !a;                a = a * a;
+        a = a + a;     a = !a;                a = a * a;
+        a = a + a;     a = !a;                a = a * a;
+
+     (1) 8
+     (2) false
+     (3) 256
+
+      */
+     /*
+
+     Exercise 1.2.18
+
+        Suppose that x and y are double values that represent the Cartesian coordinates of a point (x, y) in the plane. Give an expression whose value is the distance of the point from origin.
+
+      */
+     public void oneTwoEighteen(double x, double y) {
+
+         double distance;
+         distance = Math.sqrt((x * x) + (y * y));
+         System.out.println(distance);
+
+     }
+     //DATE 1/11/2018
+     /*
+
+     Exercise 1.2.19
+
+        Write a program that takes two int values a and b from the command line and prints a random integer between a and b
+
+      */
+     public void oneTwoNineteen(int min, int max) {
+
+         System.out.println(ThreadLocalRandom.current().nextInt(min, max));
+     }
+     /*
+
+     Exercise 1.2.20
+
+        Write a program that prints the sum of two random integers between 1 and 6 (such as you might get when rolling dice)
+
+      */
+     public void oneTwoTwenty() {
+
+         int diceOne = ThreadLocalRandom.current().nextInt(1, 6);
+         int diceTwo = ThreadLocalRandom.current().nextInt(1, 6);
+         System.out.println(diceOne + diceTwo);
+
+     }
+     /*
+
+     Exercise 1.2.21
+
+        Write a program that takes a double value t from the command line and prints the value of sin(2t) + sin(3t)
+
+      */
+     public void oneTwoTwentyone(double t) {
+
+         System.out.println(Math.sin(2 * t) + Math.sin(3 * t));
+
+     }
+     /*
+
+     Exercise 1.2.22
+
+        Write a program that takes three double values x, v, and t from the command line and prints the value of x + vt + gt^2/2
+
+      */
+     public void oneTwoTwentytwo(double x, double v, double t) {
+
+         double g = 9.78033;
+         System.out.println(x + v * t + g * (t * t) / 2);
+
+     }
+     /*
+
+     Exercise 1.2.23
+
+        Write a program that takes two int values m and d from the command line and prints true if day d of the month m is between 3/20 and 6/20, false otherwise
+
+    */
     public static void main(String args[]) {
 
         new Exercises();
