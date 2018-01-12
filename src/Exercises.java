@@ -184,6 +184,16 @@ public class Exercises {
         It cannot resolve the symbol "sqrt", because we are not calling the class, therefore it's looking for the function in your class.
 
       */
+    public void oneTwoTwelve(String argB, String argC) {
+
+        double b = Double.parseDouble(argB);
+        double c = Double.parseDouble(argC);
+        double discriminant = b * b - 4.0 * c;
+        double d = Math.sqrt(discriminant);
+        System.out.println((-b + d) / 2.0);
+        System.out.println((-b - d) / 2.0);
+
+    }
      /*
 
      Exercise 1.2.13
@@ -192,16 +202,7 @@ public class Exercises {
      It should be true, but because the square root of two is an irrational number, it is not exactly two.
 
       */
-     public void oneTwoTwelve(String argB, String argC) {
 
-         double b = Double.parseDouble(argB);
-         double c = Double.parseDouble(argC);
-         double discriminant = b * b - 4.0 * c;
-         double d = Math.sqrt(discriminant);
-         System.out.println((-b + d) / 2.0);
-         System.out.println((-b - d) / 2.0);
-
-     }
      /*
 
      Exercise 1.2.14
