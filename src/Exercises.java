@@ -353,6 +353,7 @@ f
          System.out.println(x + v * t + g * (t * t) / 2);
 
      }
+     //DATE 1/12/2018
      /*
 
      Exercise 1.2.23
@@ -360,6 +361,42 @@ f
         Write a program that takes two int values m and d from the command line and prints true if day d of the month m is between 3/20 and 6/20, false otherwise
 
     */
+     public void oneTwoTwentythree(int m, int d) {
+
+         if (d < 1 || d > 31) {
+
+             return;
+
+         }
+         if (m >= 3 && m <= 6) {
+
+             switch (m) {
+
+                 case 3:
+
+                     if (d > 20) {
+
+                         System.out.println(true);
+
+                     }
+                     else {
+
+                         System.out.println(false);
+
+                     }
+                     break;
+
+
+             }
+
+         }
+         else {
+
+             System.out.println(false);
+
+         }
+
+     }
     public static void main(String args[]) {
 
         new Exercises();
