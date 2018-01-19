@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-
+        
 
     }
     public void test() {
@@ -507,13 +507,64 @@ f
         System.out.println("Average: " + (random1 + random2 + random3 + random4 + random5) / 5);
 
     }
+    //DATE 1/8/2018
     /*
 
     Exercise 1.2.32
 
-        Color conversion. Several different formats are used to represent color. For example, the primary format for LCD displays, digital cameras, and web pages, known as the RGB format, specifies the level of red (R), green (G), and blue (B) on an integer scale from 0 to 255. The primary format for publishing books and magazines, known as the CMYK format, specifies the level of cyan (C), magenta (M), yellow (Y), and black (K) on a reeal scale from 0.0 to 1.0. Write a program that converts RGB to cmyk. Take three integers =
+        Color conversion. Several different formats are used to represent color. For example, the primary format for LCD displays, digital cameras, and web pages, known as the RGB format, specifies the level of red (R), green (G), and blue (B) on an integer scale from 0 to 255. The primary format for publishing books and magazines, known as the CMYK format, specifies the level of cyan (C), magenta (M), yellow (Y), and black (K) on a reeal scale from 0.0 to 1.0. Write a program that converts RGB to cmyk. Take three integers--r, g, and b--from the command line and print the equivalent CMYK values. If the RGB values are all 0 then the CMY values are all 0 and the K value is 1; otherwise, use these formulas
 
      */
+    public void oneTwoThirtyTwo(double r, double g, double b) {
+
+        double w;
+        double c;
+        double m;
+        double y;
+        double k;
+        if (r == 0 && g == 0 && b == 0) {
+
+            c = 0;
+            m = 0;
+            y = 0;
+            k = 1;
+
+        }
+        else {
+
+            w = Math.max(Math.max(r / 255, g / 255), b / 255);
+            c = (w - (r / 255)) / w;
+            m = (w - (g / 255)) / w;
+            y = (w - (b / 255)) / w;
+            k = 1 - w;
+
+        }
+        System.out.println("C: " + c + " M: " + m + " Y: " + y + " K: " + k);
+
+    }
+    /*
+
+    Exercise 1.2.33
+
+        Great circle. Write a program that takes four command-line arguments--x1, y1, x2, and y2--(the latitude and longitude, in degrees, of two points on the earth) and prints out the great-circle distance between them. The great-circle distance (in nautical miles) is given by the equation:
+
+            d = 60 * arccos(sin(x1) * sin(x2) + cos(x1) * cos(x2) * cos(y1 - y2))
+
+        Note that this equation uses degrees, whereas Java's trigonometric functions use radians. Use Math.toRadians() and Math.toDegrees() to convert between the two. Use your program to compute the great-circle distance between Paris (48.87 degrees N and -2.33 degrees W) and San Francisco (37.8 degrees N and 122.4 degrees W)
+
+      */
+    public void oneTwoThirtythree(double x1, double x2, double y1, double y2) {
+
+        x1 = Math.toRadians(x1);
+        x2 = Math.toRadians(x2);
+        y1 = Math.toRadians(y1);
+        y2 = Math.toRadians(y2);
+        double angle1 = Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
+        angle1 = Math.toDegrees(angle1);
+        double distance1 = 60 * angle1;
+        System.out.println(distance1 + " nautical miles");
+
+    }
     public static void main(String args[]) {
 
         new Exercises();
