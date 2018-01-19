@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="307bfdfd-deaf-4462-8caf-333ee178767d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Exercises.java" afterPath="$PROJECT_DIR$/src/Exercises.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="Notes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Notes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="47" />
+            <state relative-caret-position="527">
+              <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -27,8 +28,8 @@
       <file leaf-file-name="Exercises.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Exercises.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5662">
-              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="377">
+              <caret line="473" column="43" lean-forward="true" selection-start-line="473" selection-start-column="43" selection-end-line="473" selection-end-column="43" />
               <folding>
                 <element signature="method#test#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneOneOne#0;class#Exercises#0" expanded="false" />
@@ -85,10 +86,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -256,7 +258,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -319,6 +321,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Notes.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercises.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <element signature="method#test#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneOneOne#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoTwelve#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoFourteen#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoTwentythree#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoTwentyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoTwentyEight#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoTwentyNine#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneTwoThirty#0;class#Exercises#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notes.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2448">
           <caret line="145" column="29" lean-forward="false" selection-start-line="145" selection-start-column="29" selection-end-line="145" selection-end-column="29" />
           <folding />
@@ -362,7 +397,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2074">
           <caret line="122" column="31" lean-forward="false" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="e#9016#9017#0" expanded="false" />
+            <element signature="e#9058#9059#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -469,7 +507,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2329">
           <caret line="137" column="25" lean-forward="false" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#9016#9017#0" expanded="false" />
+            <element signature="e#9058#9059#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -710,16 +751,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Notes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="47" />
+        <state relative-caret-position="527">
+          <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercises.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5662">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="377">
+          <caret line="473" column="43" lean-forward="true" selection-start-line="473" selection-start-column="43" selection-end-line="473" selection-end-column="43" />
           <folding>
             <element signature="method#test#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneOneOne#0;class#Exercises#0" expanded="false" />

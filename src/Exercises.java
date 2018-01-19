@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        
+        oneTwoThirtythree(48.87,  37.8, -2.33, 122.4);
 
     }
     public void test() {
@@ -440,7 +440,7 @@ f
         System.out.println(w);
 
     }
-    //DATE 1/2/28
+    //DATE 1/17/28
     /*
 
     Exercise 1.2.28
@@ -507,7 +507,7 @@ f
         System.out.println("Average: " + (random1 + random2 + random3 + random4 + random5) / 5);
 
     }
-    //DATE 1/8/2018
+    //DATE 1/18/2018
     /*
 
     Exercise 1.2.32
