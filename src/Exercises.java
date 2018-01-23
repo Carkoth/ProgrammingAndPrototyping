@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneTwoThirtythree(48.87,  37.8, -2.33, 122.4);
+
 
     }
     public void test() {
@@ -565,9 +565,54 @@ f
         System.out.println(distance1 + " nautical miles");
 
     }
+    /*
+
+    Exercise 1.2.34
+
+        Three-sort. Write a program that takes three int values from the command line and prints them in ascending order. Use Math.min() and Math.max().
+
+     */
+    public void oneTwoThirtyfour(int numberOne, int numberTwo, int numberThree) {
+
+        int smallest = Math.min(Math.min(numberOne, numberTwo), numberThree);
+        int largest = Math.max(Math.max(numberOne, numberTwo), numberThree);
+        int median = numberOne + numberTwo + numberThree - smallest - largest;
+        System.out.println(smallest +   + median +   + largest);
+
+    }
+    //DATE 1/23/2018
+    /*
+
+    Exercise 1.3.1
+
+        Write a program that takes three integer command-line arguments and prints "equal" if all three are equal, and "not equal" otherwise
+
+     */
+    public void oneThreeOne(int valueOne, int valueTwo, int valueThree) {
+
+        if (valueOne == valueTwo && valueOne == valueThree) {
+
+            System.out.println("equal");
+
+        }
+        else {
+
+            System.out.println("not equal");
+
+        }
+
+    }
+    /*
+
+    Exercise 1.3.3
+
+        What (if anything) is wrong with each of the following statements
+
+     */
     public static void main(String args[]) {
 
         new Exercises();
 
     }
+
 }

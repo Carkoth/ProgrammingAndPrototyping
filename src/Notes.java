@@ -7,6 +7,7 @@ public class  Notes {
 
         //Website: http://www.cs.princeton.edu/IntroProgramming
         //DATE 12/8/17
+        //Chapter 1.2
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         // Pg. 15
         //Integers, declared as int, are numbers such as 00, -12, 2147483647, and so on. There are no decimals in integers
@@ -262,6 +263,8 @@ public class  Notes {
         (int) (11 * 0.3)          int                         3
 
          */
+        //Chapter 1.3
+        //--------------------------------------------------------------------------------------------------------------------------------------
         //pg 46
         // if (<boolean expression>) { <statements> } || if the statement is true, then rune the code
         a = 2;
@@ -324,6 +327,7 @@ public class  Notes {
             System.out.println("Hello " + i);
 
         }
+        System.out.println();
         //DATE 1/3/2018 -- Happy new year!
         //--------------------------------------------------------------------------------------------------------------
         /*
@@ -332,6 +336,113 @@ public class  Notes {
         i = i + 1   i++;   ++i;   i += 1
 
          */
+        //DATE 1/23/2018
+        //pg. 70
+        /*
+
+        break;
+
+        break statements are used if you want to exit a loop without it running to completion
+
+         */
+        a = 1;
+        while (a == 1) {
+
+            System.out.println("This would go on forever, but we used a break statement to end it.");
+            break;
+
+        }
+        System.out.println();
+        /*
+
+        continue
+
+        continue statements are used within a loop to skip to the next iteration of the loop.
+
+         */
+        for (a = 1; a <= 10; a++) {
+
+            if (a == 5) {
+
+                continue;
+
+            }
+            System.out.println(a);
+
+        }
+        System.out.println();
+        //Note that the output does not contain 5
+        /*
+
+        switch (<variable>) {
+
+            case <value>:
+
+                <statement>
+                break;
+
+            case <value>:
+
+                <statement>
+                break;
+
+            default:
+
+                <statement>
+                break;
+
+        }
+
+        Used as a solution to the problem of having to use too many else if statements. You have it search for a value in each of the cases, run their statements, and if none match, it runs default
+
+         */
+        //NOTE: Use break statements
+        stringVariableA = "pizza";
+        switch (stringVariableA) {
+
+            case "pizza":
+
+                System.out.println("Pizza is good");
+                break;
+
+            case "ice cream":
+
+                System.out.println("Ice cream is good");
+                break;
+
+                default:
+
+                    System.out.println("I'm not sure what food is good");
+                    break;
+
+        }
+        System.out.println();
+        /*
+
+        Another way to write a while loop
+
+        do {<statements>} while (<boolean expression>);
+
+        Same as
+
+        while (<boolean expression>) {<statements>}
+
+         */
+        a = 1;
+        do {
+
+            System.out.println("a is " + a + ".");
+            a++;
+
+        }
+        while (a <= 5);
+        System.out.println();
+        /*
+
+        Only difference is first test of the condition is omitted, the above loop will run once even if a is 6
+
+         */
+
 
     }
 
