@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-
+        oneThreeSeven(14);
 
     }
     public void test() {
@@ -602,13 +602,118 @@ f
         }
 
     }
+    //DATE 1/25/2018
     /*
 
     Exercise 1.3.3
 
-        What (if anything) is wrong with each of the following statements
+        What (if anything) is wrong with each of the following statements?
+
+            a. if (a > b) then c = 0;
+            b. if a > b {c = 0;}
+            c. if (a > b) c = 0;
+            d. if (a > b) c = 0 else b = 0;
+
+        a. There is no such thing as a then statement
+        b. Parentheses are required for the boolean statement
+        c. Nothing is wrong
+        d. A semicolon is needed in-between c = 0 and else
 
      */
+    /*
+
+    Exercise 1.3.4
+
+        Write a code fragment that prints true if the double variables x and y are both strictly between 0 and 1 and false otherwise.
+
+     */
+    public void oneThreeFour(double x, double y) {
+
+        if (x > 0 && x < 1 && y > 0 && y < 1) {
+
+            System.out.println(true);
+
+        }
+        else {
+
+            System.out.println(false);
+
+        }
+
+    }
+    /*
+
+    Exercise 1.3.5
+
+        Improve your solution to Exercise 1.2.25 by adding code to check the values of the command-line arguments fall between the ranges of validity of the formula, and also adding code to print out an error message if that is not the case.
+
+        Already have done this, but will put in separate function anyways
+
+     */
+    public void oneThreeFive (double t, double v) {
+
+        if ((Math.abs(t) > 50) || (v > 120 || v < 3)) {
+
+            System.out.println("Values outside limits for formula validity");
+            return;
+
+        }
+        double w = 35.74 + 0.6215 * t + (0.4275 * t - 35.75) * Math.pow(v, 0.16);
+        System.out.println(w);
+
+    }
+    /*
+
+    Exercise 1.3.6
+
+        Suppose that i and j are both of type int. What is the value of j after each of the following statements is executed?
+
+            a. for (i = 0, j = 0; i < 10; i++) j += i;
+            b. for (i = 0, j = 1; i < 10; i++) j += j;
+            c. for (j = 0; j < 10; j++) j += j
+            d. for (i = 0, j = 0;
+
+        a. 45
+        b. 1024
+        c. 15
+        d. 1023
+
+     */
+    /*
+
+    Exercise 1.3.7
+
+        Rewrite TenHellos to make a program that takes the number of lines to print as a command-line argument. You may assume that the argument is less than 1000. Hint: Use i % 10 and i % 100 to determine when to use st, rd, or th for printing the ith Hello.
+
+     */
+    public void oneThreeSeven(int numberOfHellos) {
+
+        for (int i = 1; i <= numberOfHellos; i++) {
+
+            if (i == 1) {
+
+                System.out.println("1st Hello");
+
+            }
+            else if (i == 2) {
+
+                System.out.println("2nd Hello");
+
+            }
+            else if (i == 3) {
+
+                System.out.println("3rd Hello");
+
+            }
+            else if (i >= 4 && i <= 1000) {
+
+                System.out.println(i + "th Hello");
+
+            }
+
+        }
+
+    }
     public static void main(String args[]) {
 
         new Exercises();
