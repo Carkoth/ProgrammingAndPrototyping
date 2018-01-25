@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneThreeSeven(14);
+
 
     }
     public void test() {
@@ -690,22 +690,22 @@ f
 
         for (int i = 1; i <= numberOfHellos; i++) {
 
-            if (i == 1) {
+            if (i % 10 == 1 && i != 11) {
 
-                System.out.println("1st Hello");
-
-            }
-            else if (i == 2) {
-
-                System.out.println("2nd Hello");
+                System.out.println(i + "st Hello");
 
             }
-            else if (i == 3) {
+            else if (i % 10 == 2 && i != 12) {
 
-                System.out.println("3rd Hello");
+                System.out.println(i + "nd Hello");
 
             }
-            else if (i >= 4 && i <= 1000) {
+            else if (i % 10 == 3 && i != 13) {
+
+                System.out.println(i + "rd Hello");
+
+            }
+            else {
 
                 System.out.println(i + "th Hello");
 
@@ -714,6 +714,85 @@ f
         }
 
     }
+    /*
+
+    Exercise 1.3.8
+
+        Write a program that, using one for loop and one if statement, prints the integers from 1000 to 2000 with five integers per line. Hint: use the % operation.
+
+     */
+    public void oneThreeEight() {
+
+        for (int i = 1000; i <= 2000; i++) {
+
+            if (i % 5 == 0) {
+
+                System.out.println();
+
+            }
+            System.out.print(i + " ");
+
+        }
+
+    }
+    /*
+
+    Exercise 1.3.9
+
+        Write a program that takes an integer N as a command-line argument, uses Math.random() to print N uniform random values between - and 1, and then prints their average value.
+
+     */
+    public void oneThreeNine(int N) {
+
+        double sum = 0;
+        for (int i = 1; i <= N; i++) {
+
+            double random = Math.random();
+            System.out.println(random);
+            sum = sum + random;
+
+        }
+        System.out.println("Average: " + sum / N);
+
+    }
+    /*
+
+    Exercise 1.3.10
+
+        Describe what happens if you try to print a ruler function (see the table on page 57) [I will insert the code from the table into the function bellow] with a value too large, such as 100.
+
+        The output becomes much too long, and ends up congealing onto one line
+
+     */
+    public void oneThreeTen(int N) {
+
+        String ruler = "";
+        for (int i = 1; i <= N; i++) {
+
+            ruler = ruler + i + ruler;
+            System.out.println(ruler);
+
+        }
+
+    }
+    /*
+
+    Exercise 1.3.12
+
+        What does the following program print?
+
+            int f = 0, g = 1;
+            for (int i = 0; i <= 15; i++) {
+
+                System.out.println(f)
+                f = f + g
+                g = f - g;
+
+            }
+
+        It prints the Fibonacci sequence.
+
+     */
     public static void main(String args[]) {
 
         new Exercises();
