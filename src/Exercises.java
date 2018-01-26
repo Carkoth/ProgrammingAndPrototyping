@@ -577,7 +577,7 @@ f
         int smallest = Math.min(Math.min(numberOne, numberTwo), numberThree);
         int largest = Math.max(Math.max(numberOne, numberTwo), numberThree);
         int median = numberOne + numberTwo + numberThree - smallest - largest;
-        System.out.println(smallest +   + median +   + largest);
+        System.out.println(smallest + " " + median + " " + largest);
 
     }
     //DATE 1/23/2018
@@ -602,7 +602,7 @@ f
         }
 
     }
-    //DATE 1/25/2018
+    //DATE 1/24/2018
     /*
 
     Exercise 1.3.3

@@ -245,7 +245,6 @@ public class  Notes {
         System.out.println("String converted to a long: " + longResult);
         System.out.println();
         //DATE 12/14/17
-        //--------------------------------------------------------------------------------------------------------------
         //p.32
         /*
 
@@ -428,7 +427,7 @@ public class  Notes {
         while (<boolean expression>) {<statements>}
 
          */
-        a = 1;
+        a = 6;
         do {
 
             System.out.println("a is " + a + ".");

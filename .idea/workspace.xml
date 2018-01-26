@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa78197d-0a16-45da-a348-ecae5a0293f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Exercises.java" afterPath="$PROJECT_DIR$/src/Exercises.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Notes.java" afterPath="$PROJECT_DIR$/src/Notes.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="Notes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Notes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7259">
-              <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+            <state relative-caret-position="667">
+              <caret line="443" column="0" lean-forward="true" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -28,8 +28,8 @@
       <file leaf-file-name="Exercises.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Exercises.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="792" column="41" lean-forward="false" selection-start-line="792" selection-start-column="41" selection-end-line="792" selection-end-column="41" />
+            <state relative-caret-position="4742">
+              <caret line="793" column="0" lean-forward="true" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
               <folding>
                 <element signature="method#oneThreeFour#0;class#Exercises#0" expanded="false" />
               </folding>
@@ -43,6 +43,8 @@
     <findStrings>
       <find>p. 4</find>
       <find>1.2.25</find>
+      <find>1/22</find>
+      <find>1/23</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -62,10 +64,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="111" />
-    <option name="y" value="461" />
+    <option name="x" value="1070" />
+    <option name="y" value="408" />
     <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -230,11 +232,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="111" y="461" width="960" height="1040" extended-state="0" />
+    <frame x="1070" y="408" width="960" height="1100" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -256,6 +258,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -268,6 +271,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Notes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7276">
+          <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercises.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13464">
+          <caret line="792" column="41" lean-forward="false" selection-start-line="792" selection-start-column="41" selection-end-line="792" selection-end-column="41" />
+          <folding>
+            <element signature="method#oneThreeFour#0;class#Exercises#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Notes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7259">
@@ -306,16 +327,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Notes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7259">
-          <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+        <state relative-caret-position="667">
+          <caret line="443" column="0" lean-forward="true" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercises.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="792" column="41" lean-forward="false" selection-start-line="792" selection-start-column="41" selection-end-line="792" selection-end-column="41" />
+        <state relative-caret-position="4742">
+          <caret line="793" column="0" lean-forward="true" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
           <folding>
             <element signature="method#oneThreeFour#0;class#Exercises#0" expanded="false" />
           </folding>
