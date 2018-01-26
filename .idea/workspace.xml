@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa78197d-0a16-45da-a348-ecae5a0293f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Exercises.java" afterPath="$PROJECT_DIR$/src/Exercises.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Notes.java" afterPath="$PROJECT_DIR$/src/Notes.java" />
-    </list>
+    <list default="true" id="aa78197d-0a16-45da-a348-ecae5a0293f9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +25,8 @@
       <file leaf-file-name="Exercises.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Exercises.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4742">
-              <caret line="793" column="0" lean-forward="true" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
+            <state relative-caret-position="3923">
+              <caret line="781" column="27" lean-forward="false" selection-start-line="781" selection-start-column="27" selection-end-line="781" selection-end-column="27" />
               <folding>
                 <element signature="method#oneThreeFour#0;class#Exercises#0" expanded="false" />
               </folding>
@@ -64,8 +61,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1070" />
-    <option name="y" value="408" />
+    <option name="x" value="890" />
+    <option name="y" value="48" />
     <option name="width" value="960" />
     <option name="height" value="1100" />
   </component>
@@ -232,7 +229,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1070" y="408" width="960" height="1100" extended-state="0" />
+    <frame x="890" y="48" width="960" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -335,8 +332,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercises.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4742">
-          <caret line="793" column="0" lean-forward="true" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
+        <state relative-caret-position="3923">
+          <caret line="781" column="27" lean-forward="false" selection-start-line="781" selection-start-column="27" selection-end-line="781" selection-end-column="27" />
           <folding>
             <element signature="method#oneThreeFour#0;class#Exercises#0" expanded="false" />
           </folding>
