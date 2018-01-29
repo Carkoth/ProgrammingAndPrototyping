@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-
+        oneThreeTwentytwo(100, 1000000, 100);
 
     }
     public void test() {
@@ -777,7 +777,7 @@ f
     }
     /*
 
-    Exercise 1.3.12
+    Exercise 1.3.13
 
         What does the following program print?
 
@@ -793,10 +793,110 @@ f
         It prints the Fibonacci sequence.
 
      */
+    //DATE 1/29/2018
+    /*
+
+    Exercise 1.3.21 Write a version of Gambler that uses two nested while loops or two nested for loops instead of a while loop inside of a for loop
+
+     */
+    public void oneThreeTwentyone(int startBankroll, int desiredBankroll, int trials) {
+
+        int bets = 0;
+        int wins = 0;
+        int t = 0;
+        while (t < trials ) {
+
+            int cash = startBankroll;
+            while (cash > 0 && cash < desiredBankroll) {
+
+                bets++;
+                if (Math.random() < 0.5) {
+
+                    cash++;
+
+                }
+                else {
+
+                    cash--;
+
+                }
+
+            }
+            if (cash == desiredBankroll) {
+
+                wins++;
+
+            }
+            t++;
+
+        }
+        System.out.println(wins + " wins of " + trials);
+        System.out.println("Percent of games won = " + 100.0 * wins / trials);
+        System.out.println("Avg # of bets = " + 1.0 * bets / trials);
+
+    }
+    /*
+
+    Exercise 1.3.22
+
+        Write a program that traces a gambler's ruin simulation by printing a line after each bet in wich an asterisk corresponds to each dollar held by the gambler.
+
+     */
+    public void oneThreeTwentytwo(int startBankroll, int desiredBankroll, int trials) {
+
+        int bets = 0;
+        int wins = 0;
+        int t = 1;
+        while (t <= trials ) {
+
+            System.out.println("Trial " + t);
+            int cash = startBankroll;
+            while (cash > 0 && cash < desiredBankroll) {
+
+                bets++;
+                if (Math.random() < 0.5) {
+
+                    cash++;
+
+                }
+                else {
+
+                    cash--;
+
+                }
+                int asteriskCounter = 0;
+                while (asteriskCounter < cash) {
+
+                    System.out.print("*");
+                    asteriskCounter++;
+                }
+                System.out.println();
+
+            }
+            if (cash == desiredBankroll) {
+
+                System.out.println("Gambler wins!");
+                wins++;
+
+            }
+            else {
+
+                System.out.println("Gambler loses!");
+
+            }
+            t++;
+
+        }
+        System.out.println(wins + " wins of " + trials);
+        System.out.println("Percent of games won = " + 100.0 * wins / trials);
+        System.out.println("Avg # of bets = " + 1.0 * bets / trials);
+
+    }
     public static void main(String args[]) {
 
         new Exercises();
 
     }
+
 
 }
