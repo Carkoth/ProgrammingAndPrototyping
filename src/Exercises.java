@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneThreeTwentytwo(100, 1000000, 100);
+        oneThreeTwentyfour(50, 100, 100, 0.5, 10000);
 
     }
     public void test() {
@@ -892,11 +892,146 @@ f
         System.out.println("Avg # of bets = " + 1.0 * bets / trials);
 
     }
+    /*
+
+    Exercise 1.3.23
+
+        Modify Gambler ot take an extra command-line argument that specifies the (fixed) probability that the gambler wins each bet. Use your program to learn how this probability affects the chance of winning and the expected number of bets. Try a value close to 0.5 (say, 0.48).
+
+     */
+    public void oneThreeTwentythree(int startBankroll, int desiredBankroll, int trials, double betProbability) {
+
+        int bets = 0;
+        int wins = 0;
+        int t = 1;
+        while (t <= trials ) {
+
+            System.out.println("Trial " + t);
+            int cash = startBankroll;
+            while (cash > 0 && cash < desiredBankroll) {
+
+                bets++;
+                if (Math.random() < betProbability) {
+
+                    cash++;
+
+                }
+                else {
+
+                    cash--;
+
+                }
+                int asteriskCounter = 0;
+                while (asteriskCounter < cash) {
+
+                    System.out.print("*");
+                    asteriskCounter++;
+                }
+                System.out.println();
+
+            }
+            if (cash == desiredBankroll) {
+
+                System.out.println("Gambler wins!");
+                wins++;
+
+            }
+            else {
+
+                System.out.println("Gambler loses!");
+
+            }
+            t++;
+
+        }
+        System.out.println(wins + " wins of " + trials);
+        System.out.println("Percent of games won = " + 100.0 * wins / trials);
+        System.out.println("Avg # of bets = " + 1.0 * bets / trials);
+
+    }
+    /*
+
+    Exercise 1.3.24
+
+        Modify Gambler to take an extra command-line argument that specifies the number of bets the gambler is willing to make, so that there are three possible ways for the game to end: the gambler wins, loses, or runs out of time. Add to the output to give the expected amount of money the gambler will have when the game ends.
+
+     */
+    public void oneThreeTwentyfour(int startBankroll, int desiredBankroll, int trials, double betProbability, int maxNumberOfBets) {
+
+        int bets = 0;
+        int wins = 0;
+        int loses = 0;
+        int ranOutOfTime = 0;
+        int totalMoney = 0;
+        int t = 1;
+
+        while (t <= trials ) {
+
+            System.out.println("Trial " + t);
+            int cash = startBankroll;
+            while (cash > 0 && cash < desiredBankroll && bets < maxNumberOfBets) {
+
+                bets++;
+                if (Math.random() < betProbability) {
+
+                    cash++;
+
+                }
+                else {
+
+                    cash--;
+
+                }
+                int asteriskCounter = 0;
+                while (asteriskCounter < cash) {
+
+                    System.out.print("*");
+                    asteriskCounter++;
+                }
+                System.out.println();
+
+            }
+            if (cash == desiredBankroll) {
+
+                System.out.println("Gambler wins!");
+                wins++;
+                totalMoney = totalMoney + cash;
+
+            }
+            else if (cash == 0){
+
+                System.out.println("Gambler loses!");
+                loses++;
+
+            }
+            else if (cash != desiredBankroll) {
+
+                System.out.println("Gambler ran out of time!");
+                totalMoney = totalMoney + cash;
+                ranOutOfTime++;
+
+            }
+            else {
+
+                System.out.println("Something went wrong (Error Code 1)");
+
+            }
+            t++;
+
+        }
+        System.out.println("Total Games: " + trials);
+        System.out.println("Wins: " + wins);
+        System.out.println("Loses: " + loses);
+        System.out.println("Ran Out of Time: " + ranOutOfTime);
+        System.out.println("Percent of games won = " + 100.0 * wins / trials);
+        System.out.println("Avg # of bets = " + 1.0 * bets / trials);
+        System.out.println("Average Remaining Money: " + totalMoney / trials);
+
+    }
     public static void main(String args[]) {
 
         new Exercises();
 
     }
-
 
 }
