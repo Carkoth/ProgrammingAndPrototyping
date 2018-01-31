@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneThreeTwentyfour(50, 100, 100, 0.5, 10000);
+
 
     }
     public void test() {
@@ -899,6 +899,7 @@ f
         Modify Gambler ot take an extra command-line argument that specifies the (fixed) probability that the gambler wins each bet. Use your program to learn how this probability affects the chance of winning and the expected number of bets. Try a value close to 0.5 (say, 0.48).
 
      */
+    //DATE 1/30/2018
     public void oneThreeTwentythree(int startBankroll, int desiredBankroll, int trials, double betProbability) {
 
         int bets = 0;
@@ -956,6 +957,7 @@ f
         Modify Gambler to take an extra command-line argument that specifies the number of bets the gambler is willing to make, so that there are three possible ways for the game to end: the gambler wins, loses, or runs out of time. Add to the output to give the expected amount of money the gambler will have when the game ends.
 
      */
+    //DATE 1/30/2018 & 1/31/2018
     public void oneThreeTwentyfour(int startBankroll, int desiredBankroll, int trials, double betProbability, int maxNumberOfBets) {
 
         int bets = 0;
@@ -964,14 +966,14 @@ f
         int ranOutOfTime = 0;
         int totalMoney = 0;
         int t = 1;
-
         while (t <= trials ) {
 
             System.out.println("Trial " + t);
             int cash = startBankroll;
-            while (cash > 0 && cash < desiredBankroll && bets < maxNumberOfBets) {
+            int currentBets = 0;
+            while (cash > 0 && cash < desiredBankroll && currentBets < maxNumberOfBets) {
 
-                bets++;
+                currentBets++;
                 if (Math.random() < betProbability) {
 
                     cash++;
@@ -1016,6 +1018,7 @@ f
                 System.out.println("Something went wrong (Error Code 1)");
 
             }
+            bets = bets + currentBets;
             t++;
 
         }
@@ -1026,6 +1029,93 @@ f
         System.out.println("Percent of games won = " + 100.0 * wins / trials);
         System.out.println("Avg # of bets = " + 1.0 * bets / trials);
         System.out.println("Average Remaining Money: " + totalMoney / trials);
+
+    }
+    /*
+
+    Exercise 1.3.27
+
+        Write a program that takes one command-line argument N and uses a loop within a loop to print out a two dimensional N-by-N checkerboard pattern with alternating hashes and at signs.
+
+     */
+    public void oneThreeTwentyseven(int N) {
+
+        int height = 0;
+        int width = 0;
+        while (height < N) {
+            if (height % 2 == 0) {
+
+                while (width < N) {
+
+                    if (width % 2 == 0) {
+
+                        System.out.print(" #");
+
+                    }
+                    if (width % 2 == 1) {
+
+                        System.out.print(" @");
+
+                    }
+                    width++;
+
+                }
+                System.out.println();
+                height++;
+                width = 0;
+
+            }
+            if (height % 2 == 1) {
+
+                while (width < N) {
+
+                    if (width % 2 == 0) {
+
+                        System.out.print(" @");
+
+                    }
+                    if (width % 2 == 1) {
+
+                        System.out.print(" #");
+
+                    }
+                    width++;
+
+                }
+                System.out.println();
+                height++;
+                width = 0;
+
+            }
+
+        }
+
+    }
+    /*
+
+    Exercise 1.3.28
+
+        Write a program that finds the greatest common divisor (gcd) of two integers using Euclid's algorithm, which is an iterative computation based on the following observation: if x is greater than y, then if y divides x, the gcd of x and y is y, otherwise, the gcd of x and y is the same as the gcd of x % y and y.
+
+     */
+    public void oneThreeTwentyeight(int x, int y) {
+
+        int gcd;
+        if (x % y == 0) {
+
+            gcd = y;
+
+        }
+        else if (y % x == 0) {
+
+            gcd = x;
+
+        }
+        else {
+
+
+
+        }
 
     }
     public static void main(String args[]) {
