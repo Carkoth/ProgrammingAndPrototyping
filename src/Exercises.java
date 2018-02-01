@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-
+        oneThreeTwentyeight(4701413, 515125);
 
     }
     public void test() {
@@ -1100,22 +1100,35 @@ f
      */
     public void oneThreeTwentyeight(int x, int y) {
 
-        int gcd;
-        if (x % y == 0) {
+        int gcd = 0;
+        boolean solved = false;
+        while (!solved) {
 
-            gcd = y;
+            if (x % y == 0) {
+
+                gcd = y;
+                solved = true;
+
+            }
+            else if (y % x == 0) {
+
+                gcd = x;
+                solved = true;
+
+            }
+            else if (x > y){
+
+                x = x % y;
+
+            }
+            else if (y > x) {
+
+                y = y % x;
+
+            }
 
         }
-        else if (y % x == 0) {
-
-            gcd = x;
-
-        }
-        else {
-
-
-
-        }
+        System.out.println("Greatest common denominator: " + gcd);
 
     }
     public static void main(String args[]) {
