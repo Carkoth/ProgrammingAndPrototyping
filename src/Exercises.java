@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneThreeTwentyeight(4701413, 515125);
+
 
     }
     public void test() {
@@ -1131,6 +1131,75 @@ f
         System.out.println("Greatest common denominator: " + gcd);
 
     }
+    /*
+
+    Exercise 1.3.29
+
+        Write a program that takes one command line argument N and prints out an N-by-N table such that three is an * in row i and column j if the gcd of i and j is 1 (i and j are relatively prime) and a space in that position otherwise
+
+     */
+    public void oneThreeTwentynine(int N) {
+
+        int i = 1; //Row
+        int j; //Column
+        while (i <= N) {
+
+            j = 1;
+            while (j <= N) {
+
+                boolean gcdSolved = false;
+                int gcd = 0;
+                int y = i;
+                int x = j;
+                while (!gcdSolved) {
+
+                    if (y % x == 0) {
+
+                        gcd = x;
+                        gcdSolved = true;
+
+                    } else if (x % y == 0) {
+
+                        gcd = y;
+                        gcdSolved = true;
+
+                    } else if (y > x) {
+
+                        y = y % x;
+
+                    } else if (x > y) {
+
+                        x = x % y;
+
+                    }
+
+                }
+                if (gcd == 1) {
+
+                    System.out.print("*");
+
+                }
+                else {
+
+                    System.out.print(" ");
+
+                }
+                j++;
+
+            }
+            System.out.println();
+            i++;
+
+        }
+
+    }
+    /*
+
+        Exercise 1.3.32
+
+            Ramanujan's taxi. Srinivasa Ramanujan was anIndian mathematician who became famous for his intuition for numbers. When the English mathematician G. H. Hardy came to visit him one day, Hardy remarked that the number of his taxi was 1729, a rather dull number. To which Ramanujan replied, "No, Hardy! No, Hardy! It is a very interesting number. It is the smallest number expressible as the sum of two cubes in two different ways." Verify this claim by writing a program that takes a command-line argument N and prints out all integers less than or equal to N that can be expressed as the sum of two cubes in two different ways. In other words, find distinct positive integers a, b, c, and d such that a^3 + b^3 = c^3 + d^3. Use four nested loops.
+
+     */
     public static void main(String args[]) {
 
         new Exercises();
