@@ -1195,11 +1195,191 @@ f
     }
     /*
 
-        Exercise 1.3.32
+        Exercise 1.3.33
 
-            Ramanujan's taxi. Srinivasa Ramanujan was anIndian mathematician who became famous for his intuition for numbers. When the English mathematician G. H. Hardy came to visit him one day, Hardy remarked that the number of his taxi was 1729, a rather dull number. To which Ramanujan replied, "No, Hardy! No, Hardy! It is a very interesting number. It is the smallest number expressible as the sum of two cubes in two different ways." Verify this claim by writing a program that takes a command-line argument N and prints out all integers less than or equal to N that can be expressed as the sum of two cubes in two different ways. In other words, find distinct positive integers a, b, c, and d such that a^3 + b^3 = c^3 + d^3. Use four nested loops.
+            The International Standard Book Number (ISBN) is a 10 digit code that uniquely specifies a book. The rightmost digit is a checksum that can be determined from the other 9 digits, from the condition that d1 + 2d2 + 2d3 + ... + 10d10 must be a multiple of 11 (here di denotes the ith digit from the right. The checksum digit di can be any value 0 to 10. The ISBN convention is to use the character 'X' to denote 10. Example: the checksum digit to 020131452 is 5 since 5 is the only value of x between 0 and 10 for which 10*0 + 9 * 2 + 8 * 0 + 7 * 1 + 6 * 3 + 5 * 1 + 4 * 4 + 3 * 5 + 2 * 2 + 1 * x is a multiple of 11. Write a program that takes a 9-digit integer as a command-line argument, computes the checksum, and prints out the ISBN number.
+     */
+    public void oneThreeThirtythree(String N) {
+
+        if (N.length() > 9) {
+
+            System.out.println("Please only enter a nine digit number");
+            System.out.println("You may have tried to put 10 as a character. Instead, use X");
+            return;
+
+        }
+        int tenthChar;
+        int ninthChar;
+        int eighthChar;
+        int seventhChar;
+        int sixthChar;
+        int fifthChar;
+        int fourthChar;
+        int thirdChar;
+        int secondChar;
+        int checkSumFinder;
+        String checkSum;
+        if (N.charAt(0) == 'X' || N.charAt(0) == 'x') {
+
+            tenthChar = 10;
+
+        }
+        else {
+
+            tenthChar = N.charAt(0) - 48;
+
+        }
+        if (N.charAt(1) == 'X' || N.charAt(1) == 'x') {
+
+            ninthChar = 10;
+
+        }
+        else {
+
+            ninthChar = N.charAt(1) - 48;
+
+        }
+        if (N.charAt(2) == 'X' || N.charAt(2) == 'x') {
+
+            eighthChar = 10;
+
+        }
+        else {
+
+            eighthChar = N.charAt(2) - 48;
+
+        }
+        if (N.charAt(3) == 'X' || N.charAt(3) == 'x') {
+
+            seventhChar = 10;
+
+        }
+        else {
+
+            seventhChar = N.charAt(3) - 48;
+
+        }
+        if (N.charAt(4) == 'X' || N.charAt(4) == 'x') {
+
+            sixthChar = 10;
+
+        }
+        else {
+
+            sixthChar = N.charAt(4) - 48;
+
+        }
+        if (N.charAt(5) == 'X' || N.charAt(5) == 'x') {
+
+            fifthChar = 10;
+
+        }
+        else {
+
+            fifthChar = N.charAt(5) - 48;
+
+        }
+        if (N.charAt(6) == 'X' || N.charAt(6) == 'x') {
+
+            fourthChar = 10;
+
+        }
+        else {
+
+            fourthChar = N.charAt(6) - 48;
+
+        }
+        if (N.charAt(7) == 'X' || N.charAt(7) == 'x') {
+
+            thirdChar = 10;
+
+        }
+        else {
+
+            thirdChar = N.charAt(7) - 48;
+
+        }
+        if (N.charAt(8) == 'X' || N.charAt(8) == 'x') {
+
+            secondChar = 10;
+
+        }
+        else {
+
+            secondChar = N.charAt(8) - 48;
+
+        }
+        checkSumFinder = 11 - ((tenthChar * 10 + ninthChar * 9 + eighthChar * 8 + seventhChar * 7 + sixthChar * 6 + fifthChar * 5 + fourthChar * 4 + thirdChar * 3 + secondChar * 2) % 11);
+        if (checkSumFinder == 10) {
+
+            checkSum = "X";
+
+        }
+        else {
+
+            checkSum = Integer.toString(checkSumFinder);
+
+        }
+        System.out.println("ISBN + Checksum: " + N + checkSum);
+
+    }
+    //DATE 2/7/2018
+    /*
+
+    Exercise 1.3.34
+
+        Counting primes. Write an exercise that takes a command-line argument N and finds the number of primes less than or equal to N. Use it to print out the number of primes less than or equal to 10 million. Note: if you are not careful, your program may not finish in a reasonable amount of time.
 
      */
+    public void oneThreeThirtyfour(int N) {
+
+        while (N > 1) {
+
+            int nDivisor = N - 1;
+            while (true) {
+
+                if (nDivisor == 1) {
+
+                    System.out.println(N);
+                    break;
+
+                }
+                if (N % nDivisor == 0) {
+
+                    break;
+
+                }
+                nDivisor--;
+
+            }
+            N--;
+
+        }
+        System.out.println(1);
+
+    }
+    /*
+
+    Exercise 1.3.25
+
+        2D random walk. A two-dimensional random walk simulates the behavior of a particle moving in a grid of points. At each step, the random walker moves north, south, east, or west with probability equal to 1/4, independent of the previous moves. Write a program that takes a command-line variable N and estimates how long it will take a random walker to hit the boundary of a 2N-by-2N square centered at the starting point.
+
+     */
+    public void oneThreeThirtyfive(int N){
+
+        int trials = 1;
+        int totalMoves = 0;
+        while(trials  < 5) {
+
+            int moves = 0;
+            int x = 0;
+            int y = 0;
+            while (x != N && x != -N && y != N && y != -N)
+
+        }
+
+
+    }
     public static void main(String args[]) {
 
         new Exercises();
