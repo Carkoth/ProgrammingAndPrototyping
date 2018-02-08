@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa78197d-0a16-45da-a348-ecae5a0293f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProgrammingAndPrototyping/Exercises.class" afterPath="$PROJECT_DIR$/out/production/ProgrammingAndPrototyping/Exercises.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProgrammingAndPrototyping/Exercises.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Exercises.java" afterPath="$PROJECT_DIR$/src/Exercises.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="Notes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Notes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7514">
-              <caret line="443" column="0" lean-forward="false" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,8 +37,8 @@
       <file leaf-file-name="Exercises.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Exercises.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="791">
-              <caret line="1376" column="58" lean-forward="false" selection-start-line="1376" selection-start-column="58" selection-end-line="1376" selection-end-column="58" />
+            <state relative-caret-position="587">
+              <caret line="1475" column="16" lean-forward="false" selection-start-line="1475" selection-start-column="16" selection-end-line="1475" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#test#0;class#Exercises#0" expanded="false" />
@@ -49,7 +48,6 @@
                 <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-                <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -72,10 +70,13 @@
                 <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+                <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
                 <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+                <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+                <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -115,12 +116,11 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -133,7 +133,13 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -281,37 +287,73 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4039088" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.495114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49728554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4039088" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4039088" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -321,7 +363,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Exercises.java</url>
-          <line>1203</line>
+          <line>1204</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -329,7 +371,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="38" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -359,7 +401,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -382,10 +423,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -411,7 +455,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -434,10 +477,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -463,7 +509,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -486,10 +531,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -515,7 +563,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -538,10 +585,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -567,7 +617,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -590,10 +639,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -619,7 +671,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -642,10 +693,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -671,7 +725,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -694,10 +747,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -723,7 +779,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -746,10 +801,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -775,7 +833,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -798,10 +855,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -827,7 +887,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -850,10 +909,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,16 +937,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Notes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7514">
-          <caret line="443" column="0" lean-forward="false" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/ThreadLocalRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="637" column="39" lean-forward="true" selection-start-line="637" selection-start-column="39" selection-end-line="637" selection-end-column="39" />
+          <folding>
+            <element signature="e#12065#12066#0" expanded="false" />
+            <element signature="e#12105#12106#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercises.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="1376" column="58" lean-forward="false" selection-start-line="1376" selection-start-column="58" selection-end-line="1376" selection-end-column="58" />
+        <state relative-caret-position="587">
+          <caret line="1475" column="16" lean-forward="false" selection-start-line="1475" selection-start-column="16" selection-end-line="1475" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#test#0;class#Exercises#0" expanded="false" />
@@ -894,7 +967,6 @@
             <element signature="method#oneTwoFifteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoSixteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoEighteen#0;class#Exercises#0" expanded="false" />
-            <element signature="method#oneTwoNineteen#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwenty#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentyone#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneTwoTwentytwo#0;class#Exercises#0" expanded="false" />
@@ -917,10 +989,13 @@
             <element signature="method#oneThreeTwentytwo#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeTwentyseven#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentyeight#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeTwentynine#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtythree#0;class#Exercises#0" expanded="false" />
             <element signature="method#oneThreeThirtyfour#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtyfive#0;class#Exercises#0" expanded="false" />
+            <element signature="method#oneThreeThirtynine#0;class#Exercises#0" expanded="false" />
           </folding>
         </state>
       </provider>

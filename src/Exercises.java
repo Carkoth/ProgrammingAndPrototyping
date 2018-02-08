@@ -313,6 +313,7 @@ f
      public void oneTwoNineteen(int min, int max) {
 
          System.out.println(ThreadLocalRandom.current().nextInt(min, max));
+
      }
      /*
 
@@ -1360,24 +1361,121 @@ f
     }
     /*
 
-    Exercise 1.3.25
+    Exercise 1.3.35
 
         2D random walk. A two-dimensional random walk simulates the behavior of a particle moving in a grid of points. At each step, the random walker moves north, south, east, or west with probability equal to 1/4, independent of the previous moves. Write a program that takes a command-line variable N and estimates how long it will take a random walker to hit the boundary of a 2N-by-2N square centered at the starting point.
 
      */
     public void oneThreeThirtyfive(int N){
 
-        int trials = 1;
+        int trials = 0;
         int totalMoves = 0;
-        while(trials  < 5) {
+        while(trials  < 100) {
 
             int moves = 0;
             int x = 0;
             int y = 0;
-            while (x != N && x != -N && y != N && y != -N)
+            while (x != N && x != -N && y != N && y != -N) {
+
+                double randomDirection = Math.random();
+                if (randomDirection >= 0 && randomDirection <= 0.25) {
+
+                    x++;
+
+                }
+                else if (randomDirection >= 0.26 && randomDirection <= 0.5){
+
+                    x--;
+
+                }
+                else if (randomDirection >= 0.51 && randomDirection <= 0.75) {
+
+                    y++;
+
+                }
+                else if (randomDirection >= 0.76 && randomDirection <= 1) {
+
+                    y--;
+
+                }
+                moves++;
+
+            }
+            totalMoves = totalMoves + moves;
+            trials++;
+
 
         }
+        System.out.println("Average Number of moves: " + totalMoves / trials);
 
+
+    }
+    /*
+
+    Exercise 1.3.39
+
+        Pepys problem. In 1693 Samuel Pepys asked Isaac Newton which was more likely: Getting 1 at least once when rolling a fair die six times or getting 1 at least twice when rolling it 12 times. Write a program that could have provided Newton with a quick answer.
+
+     */
+    public void oneThreeThirtynine() {
+
+        int option1Wins = 0;
+        int option2Wins = 0;
+        for (int option1Trials = 0; option1Trials <= 100; option1Trials++) {
+
+            for (int option1Rolls = 0; option1Rolls <= 6; option1Rolls++) {
+
+                if (ThreadLocalRandom.current().nextInt(1, 6) == 1) {
+
+                    option1Wins++;
+                    break;
+
+                }
+
+            }
+
+        }
+        for (int option2Trials = 0; option2Trials <= 100; option2Trials++) {
+
+            int onesRolled = 0;
+            for (int option2Rolls = 0; option2Rolls <= 12; option2Rolls++) {
+
+                if (onesRolled == 2) {
+
+                    option2Wins++;
+                    break;
+
+                }
+                if (ThreadLocalRandom.current().nextInt(1, 6) == 1) {
+
+                    onesRolled++;
+
+                }
+
+            }
+
+        }
+        System.out.println("Chance of option 1: " + option1Wins + "%");
+        System.out.println("Chance of option 2: " + option2Wins + "%");
+
+    }
+    /*
+
+    Exercise 1.3.40
+
+        Game simulation. In the 1970s game show Let's Make a Deal, a contestant is presented with three doors. Behind one of them is a valuable prize. After the contestant chooses a door, the host opens one of the other two doors (never revealing the prize, of course). The contestant is then given the opportunity to switch to the other un-opened.  The contestant is then given the opportunity to switch to the other unopened door. Should the contestant do so? Intuitively, it might seem the contestant's initial choice door and the other unopened door are equally likely to contain a prize, so there would be no incentive to switch. Write a program to test this intuition by simulation. Your program should take a command-line argument N, play th game N times using each of the two strategies (switch or do not switch), and print the chance of success for each of the two strategies.
+
+     */
+    public void oneThreeFourty(int N) {
+
+        for(int trials = 0; trials < N; trials++) {
+
+            int door = 0;
+            int prizeDoor = ThreadLocalRandom.current().nextInt(1, 3);
+            door = ThreadLocalRandom.current().nextInt(1, 3);
+            if ()
+
+        }
 
     }
     public static void main(String args[]) {
