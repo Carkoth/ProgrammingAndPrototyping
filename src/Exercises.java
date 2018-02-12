@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-
+        oneThreeFourtyone(1,2,3,4,5);
 
     }
     public void test() {
@@ -1459,23 +1459,74 @@ f
         System.out.println("Chance of option 2: " + option2Wins + "%");
 
     }
+    //DATE 2/12/2018
     /*
 
-    Exercise 1.3.40
+    Exercise 1.3.41
 
-        Game simulation. In the 1970s game show Let's Make a Deal, a contestant is presented with three doors. Behind one of them is a valuable prize. After the contestant chooses a door, the host opens one of the other two doors (never revealing the prize, of course). The contestant is then given the opportunity to switch to the other un-opened.  The contestant is then given the opportunity to switch to the other unopened door. Should the contestant do so? Intuitively, it might seem the contestant's initial choice door and the other unopened door are equally likely to contain a prize, so there would be no incentive to switch. Write a program to test this intuition by simulation. Your program should take a command-line argument N, play th game N times using each of the two strategies (switch or do not switch), and print the chance of success for each of the two strategies.
+        Median-of-5. Write a program that takes five distinct integers from the command line and prints the median value (the value such that two of the others are smaller and two are are larger). Extra credit: Solve the problem with a program that compares values fewer than seven times.
 
      */
-    public void oneThreeFourty(int N) {
+    public void oneThreeFourtyone(int intOne, int intTwo, int intThree, int intFour, int intFive) {
 
-        for(int trials = 0; trials < N; trials++) {
+        int smallest = Math.min(Math.min(Math.min(Math.min(intOne, intTwo), intThree), intFour), intFive);
+        int largest = Math.max(Math.max(Math.max(Math.max(intOne, intTwo), intThree) , intFour), intFive);
+        int secondSmallest;
+        int secondLargest;
+        int median;
+        if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intTwo + intThree) {
 
-            int door = 0;
-            int prizeDoor = ThreadLocalRandom.current().nextInt(1, 3);
-            door = ThreadLocalRandom.current().nextInt(1, 3);
-            if ()
+            secondSmallest = Math.min(Math.min(intOne, intTwo), intThree);
+            secondLargest = Math.max(Math.max(intOne, intTwo), intThree);
+            median = intOne + intTwo + intThree - secondSmallest - secondLargest;
 
         }
+        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intTwo + intFour) {
+
+            secondSmallest = Math.min(Math.min(intOne, intTwo), intFour);
+            secondLargest = Math.max(Math.max(intOne, intTwo), intFour);
+            median = intOne + intTwo + intFour - secondSmallest - secondLargest;
+
+        }
+        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intTwo + intFive) {
+
+            secondSmallest = Math.min(Math.min(intOne, intTwo), intFive);
+            secondLargest = Math.max(Math.max(intOne, intTwo), intFive);
+            median = intOne + intTwo + intFive - secondSmallest - secondLargest;
+
+        }
+        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intThree + intFour) {
+
+            secondSmallest = Math.min(Math.min(intOne, intThree), intFour);
+            secondLargest = Math.max(Math.max(intOne, intThree), intFour);
+            median = intOne + intThree + intFour - secondSmallest - secondLargest;
+
+        }
+        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intThree + intFive) {
+
+            secondSmallest = Math.min(Math.min(intOne, intThree), intFive);
+            secondLargest = Math.max(Math.max(intOne, intThree), intFive);
+            median = intOne + intThree + intFive - secondSmallest - secondLargest;
+
+        }
+        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intFour + intFive) {
+
+            secondSmallest = Math.min(Math.min(intOne, intFour), intFive);
+            secondLargest = Math.max(Math.max(intOne, intFour), intFive);
+            median = intOne + intFour + intFive - secondSmallest - secondLargest;
+
+        }
+        else {
+
+            System.out.println("Something went wrong (Error Code 2)");
+            return;
+
+        }
+        System.out.println(smallest);
+        System.out.println(secondSmallest);
+        System.out.println(median);
+        System.out.println(secondLargest);
+        System.out.println(largest);
 
     }
     public static void main(String args[]) {
