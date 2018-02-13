@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneThreeFourtyone(1,2,3,4,5);
+        oneThreeFourtyone(5,4,3,2,1);
 
     }
     public void test() {
@@ -1469,51 +1469,75 @@ f
      */
     public void oneThreeFourtyone(int intOne, int intTwo, int intThree, int intFour, int intFive) {
 
+        boolean intOneTaken = false;
+        boolean intTwoTaken = false;
+        boolean intThreeTaken = false;
+        boolean intFourTaken = false;
+        boolean intFiveTaken = false;
         int smallest = Math.min(Math.min(Math.min(Math.min(intOne, intTwo), intThree), intFour), intFive);
         int largest = Math.max(Math.max(Math.max(Math.max(intOne, intTwo), intThree) , intFour), intFive);
         int secondSmallest;
         int secondLargest;
         int median;
-        if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intTwo + intThree) {
+        if (intOne == smallest && intTwo == largest|| intOne == largest && intTwo == smallest) {
 
-            secondSmallest = Math.min(Math.min(intOne, intTwo), intThree);
-            secondLargest = Math.max(Math.max(intOne, intTwo), intThree);
-            median = intOne + intTwo + intThree - secondSmallest - secondLargest;
-
-        }
-        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intTwo + intFour) {
-
-            secondSmallest = Math.min(Math.min(intOne, intTwo), intFour);
-            secondLargest = Math.max(Math.max(intOne, intTwo), intFour);
-            median = intOne + intTwo + intFour - secondSmallest - secondLargest;
+            intOneTaken = true;
+            intTwoTaken = true;
 
         }
-        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intTwo + intFive) {
+        else if (intOne == smallest && intThree == largest || intOne == largest && intThree == smallest) {
 
-            secondSmallest = Math.min(Math.min(intOne, intTwo), intFive);
-            secondLargest = Math.max(Math.max(intOne, intTwo), intFive);
-            median = intOne + intTwo + intFive - secondSmallest - secondLargest;
-
-        }
-        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intThree + intFour) {
-
-            secondSmallest = Math.min(Math.min(intOne, intThree), intFour);
-            secondLargest = Math.max(Math.max(intOne, intThree), intFour);
-            median = intOne + intThree + intFour - secondSmallest - secondLargest;
+            intOneTaken = true;
+            intThreeTaken = true;
 
         }
-        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intThree + intFive) {
+        else if (intOne == smallest && intFour == largest || intOne == largest && intFour == smallest) {
 
-            secondSmallest = Math.min(Math.min(intOne, intThree), intFive);
-            secondLargest = Math.max(Math.max(intOne, intThree), intFive);
-            median = intOne + intThree + intFive - secondSmallest - secondLargest;
+            intOneTaken = true;
+            intFourTaken = true;
 
         }
-        else if (intOne + intTwo + intThree + intFour + intFive - smallest - largest == intOne + intFour + intFive) {
+        else if (intOne == smallest && intFive == largest || intOne == largest && intFive == smallest) {
 
-            secondSmallest = Math.min(Math.min(intOne, intFour), intFive);
-            secondLargest = Math.max(Math.max(intOne, intFour), intFive);
-            median = intOne + intFour + intFive - secondSmallest - secondLargest;
+
+            intOneTaken = true;
+            intFiveTaken = true;
+
+        }
+        else if (intTwo == smallest && intThree == largest || intTwo == largest && intThree == smallest) {
+
+            intTwoTaken = true;
+            intThreeTaken = true;
+
+        }
+        else if (intTwo == smallest && intFour == largest || intTwo == largest && intFour == smallest) {
+
+            intTwoTaken = true;
+            intFourTaken = true;
+
+        }
+        else if (intTwo == smallest && intFive == largest || intTwo == largest && intFive == smallest) {
+
+            intTwoTaken = true;
+            intFiveTaken = true;
+
+        }
+        else if (intThree == smallest && intFour == largest || intThree == largest && intFour == smallest) {
+
+            intThreeTaken = true;
+            intFourTaken = true;
+
+        }
+        else if (intThree == smallest && intFive == largest || intThree == largest && intFive == smallest) {
+
+            intThreeTaken = true;
+            intFiveTaken = true;
+
+        }
+        else if (intFour == smallest && intFive == largest || intFour == largest && intFive == smallest) {
+
+            intFourTaken = true;
+            intFiveTaken = true;
 
         }
         else {
@@ -1521,6 +1545,81 @@ f
             System.out.println("Something went wrong (Error Code 2)");
             return;
 
+        }
+        if (intOneTaken && intTwoTaken) {
+
+            secondSmallest = Math.min(Math.min(intThree, intFour), intFive);
+            secondLargest =  Math.max(Math.max(intThree, intFour), intFive);
+            median = intThree + intFour + intFive - secondSmallest - secondLargest;
+
+        }
+        else if (intOneTaken && intThreeTaken){
+
+            secondSmallest = Math.min(Math.min(intTwo, intFour), intFive);
+            secondLargest = Math.max(Math.max(intTwo, intFour), intFive);
+            median = intTwo + intFour + intFive - secondSmallest - secondLargest;
+
+        }
+        else if (intOneTaken && intFourTaken) {
+
+            secondSmallest = Math.min(Math.min(intTwo, intThree), intFive);
+            secondLargest =  Math.max(Math.max(intTwo, intThree), intFive);
+            median = intTwo + intThree + intFive - secondSmallest - secondLargest;
+
+        }
+        else if (intOneTaken && intFiveTaken) {
+
+            secondSmallest = Math.min(Math.min(intTwo, intThree), intFour);
+            secondLargest =  Math.max(Math.max(intTwo, intThree), intFour);
+            median = intTwo + intThree+ intFour - secondSmallest - secondLargest;
+
+        }
+        else if (intTwoTaken && intThreeTaken) {
+
+            secondSmallest = Math.min(Math.min(intOne, intFour), intFive);
+            secondLargest =  Math.max(Math.max(intOne, intFour), intFive);
+            median = intOne + intFour + intFive - secondSmallest - secondLargest;
+
+        }
+        else if (intTwoTaken && intFourTaken) {
+
+            secondSmallest = Math.min(Math.min(intOne, intThree), intFive);
+            secondLargest =  Math.max(Math.max(intOne, intThree), intFive);
+            median = intOne + intThree + intFive - secondSmallest - secondLargest;
+
+        }
+        else if (intTwoTaken && intFiveTaken) {
+
+            secondSmallest = Math.min(Math.min(intOne, intThree), intFour);
+            secondLargest =  Math.max(Math.max(intOne, intThree), intFour);
+            median = intOne + intThree + intFour - secondSmallest - secondLargest;
+
+        }
+        else if (intThreeTaken && intFourTaken) {
+
+            secondSmallest = Math.min(Math.min(intOne, intTwo), intFive);
+            secondLargest =  Math.max(Math.max(intOne, intTwo), intFive);
+            median = intOne + intTwo + intFive - secondSmallest - secondLargest;
+
+        }
+        else if (intThreeTaken && intFiveTaken) {
+
+            secondSmallest = Math.min(Math.min(intOne, intTwo), intFour);
+            secondLargest =  Math.max(Math.max(intOne, intTwo), intFour);
+            median = intOne + intTwo + intFour - secondSmallest - secondLargest;
+
+        }
+        else if (intFourTaken && intFiveTaken) {
+
+            secondSmallest = Math.min(Math.min(intOne, intTwo), intThree);
+            secondLargest =  Math.max(Math.max(intOne, intTwo), intThree);
+            median = intOne + intTwo + intThree - secondSmallest - secondLargest;
+
+        }
+        else {
+
+            System.out.println("Something went wrong (Error Code 3)");
+            return;
         }
         System.out.println(smallest);
         System.out.println(secondSmallest);
