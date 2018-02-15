@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneThreeFourtyone(5,4,3,2,1);
+
 
     }
     public void test() {
@@ -1626,6 +1626,42 @@ f
         System.out.println(median);
         System.out.println(secondLargest);
         System.out.println(largest);
+
+    }
+    /*
+
+    Exercise 1.3.42
+
+        Sorting three numbers. Suppose that the variables a, b, c, and t are all of the same numeric primitive type. Prove that the following code puts a, b, and c in ascending order.
+
+            if (a > b) { t = a; a = b; b = t; }
+            if (a > c} { t = a; a = c; c = t; }
+            if (b > c) { t = b; b = c; c = t; }
+
+     */
+    public static oneThreeFourtytwo(double a, double b, double c) {
+
+        if (a > b) {
+
+            t = a;
+            a = b;
+            b = t;
+
+        }
+        if (a > c) {
+
+            t = a;
+            a = c;
+            c = c;
+
+        }
+        if (b > c) {
+
+            t = b;
+            b = c;
+            c = t;
+
+        }
 
     }
     public static void main(String args[]) {
