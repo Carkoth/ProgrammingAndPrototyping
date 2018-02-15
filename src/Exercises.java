@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-
+        oneThreeFourtythree(1.5);
 
     }
     public void test() {
@@ -1639,8 +1639,9 @@ f
             if (b > c) { t = b; b = c; c = t; }
 
      */
-    public static oneThreeFourtytwo(double a, double b, double c) {
+    public void oneThreeFourtytwo(double a, double b, double c) {
 
+        double t;
         if (a > b) {
 
             t = a;
@@ -1652,7 +1653,7 @@ f
 
             t = a;
             a = c;
-            c = c;
+            c = t;
 
         }
         if (b > c) {
@@ -1662,6 +1663,46 @@ f
             c = t;
 
         }
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+    }
+    /*
+
+    Exercise 1.3.43
+
+        Chaos. Write a program to study the following simple model for population growth, which might be applied to study fish in a pond, bacteria in a test tube, or any of  a host of similar situations. We suppose that the population ranges from 0 (extinct) to 1 (Maximum population that can be sustained). If the population at time t is x, then we suppose the population at time t + 1 to be rx(1 - x), where the argument r, known as the fecundity parameter, controls the rate of growth. Start with a small population --say, x = 0.01 -- and study the result of iterating the model, for various values of r. For which values of r does the population stabilize at x = 1 - 1/r? Can you say anything about the population when r is 3.5? 3.8? 5?
+
+     */
+    public void oneThreeFourtythree(double r) {
+
+        double x = 0.1;
+        System.out.println("**********");
+        for (int t = 1; t <= 100; t++) {
+
+            x = r * x * (1 - x);
+            for (int asterisks = 0; asterisks < x * 100; asterisks++) {
+
+                System.out.print("*");
+
+            }
+            System.out.println();
+            if (x < 0.01) {
+
+                System.out.println("Population soon to be extinct");
+                break;
+
+            }
+            if (x > 1) {
+
+                System.out.println("Population limit reached");
+                break;
+
+            }
+
+        }
+        System.out.println("Final Population: " + x);
 
     }
     public static void main(String args[]) {
