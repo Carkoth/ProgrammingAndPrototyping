@@ -1464,7 +1464,7 @@ f
 
     Exercise 1.3.41
 
-        Median-of-5. Write a program that takes five distinct integers from the command line and prints the median value (the value such that two of the others are smaller and two are are larger). Extra credit: Solve the problem with a program that compares values fewer than seven times.
+        Median-of-5. Write a program that takes five rdistinct integers from the command line and prints the median value (the value such that two of the others are smaller and two are are larger). Extra credit: Solve the problem with a program that compares values fewer than seven times.
 
      */
     public void oneThreeFourtyone(int intOne, int intTwo, int intThree, int intFour, int intFive) {
@@ -1678,8 +1678,13 @@ f
     public void oneThreeFourtythree(double r) {
 
         double x = 0.1;
-        System.out.println("**********");
-        for (int t = 1; t <= 100; t++) {
+        for (int asterisks = 0; asterisks < x * 100; asterisks++) {
+
+            System.out.print("*");
+
+        }
+        System.out.println();
+        for (int t = 1; t <= 1000000; t++) {
 
             x = r * x * (1 - x);
             for (int asterisks = 0; asterisks < x * 100; asterisks++) {
@@ -1688,7 +1693,7 @@ f
 
             }
             System.out.println();
-            if (x < 0.01) {
+            /*if (x < 0.01) {
 
                 System.out.println("Population soon to be extinct");
                 break;
@@ -1699,7 +1704,7 @@ f
                 System.out.println("Population limit reached");
                 break;
 
-            }
+            }*/
 
         }
         System.out.println("Final Population: " + x);
