@@ -442,6 +442,59 @@ public class  Notes {
 
          */
 
+        //DATE 2/20/2018
+        //pg. 86
+        //Chapter 1.4
+        //Arrays
+        /*
+
+        This is the array declaration. The square brackets after the data type specify we're declaring an array
+
+         */
+        int[] intArray;
+        String[] stringArray;
+        char[] charArray;
+        boolean[] booleanArray;
+
+        /*
+
+        The "notesArray = new int[N];" creates the array. It is not necessary for primitive data types, but it is needed for other types of data. The N specifies the length of the array, but the array can be any length.
+
+         */
+        int[] notesArray;
+        int N = 10;
+        notesArray = new int[N];
+        /*
+
+        To add values to an array, simply use
+
+            <arrayName>[<arrayValue>] = <data>;
+
+         */
+        //NOTE: Remember that arrays start at 0
+        notesArray[9] = 10;
+        System.out.println(notesArray[9]);
+        System.out.println();
+        //Another example, showing that it's not always necessary to have the declaration and creation seperate
+        String[] notesArrayTwo = new String[10];
+        notesArrayTwo[0] = "Test";
+        System.out.println(notesArrayTwo[0]);
+        System.out.println();
+        /*
+
+        You can also set a small number of literal values at initialization in an array.
+
+         */
+        String[] notesArrayThree= {"Test1", "Test2", "Test3", "Test4"};
+        System.out.println(notesArrayThree[0]);
+        System.out.println();
+        //Example
+        String[] suit = {"Clubs", "Diamonds", "Hearts", "Spades"};
+        String[] rank = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+        int randomSuit = (int) (Math.random() * suit.length);
+        int randomRank = (int) (Math.random() * rank.length);
+        System.out.println(rank[randomRank] + " of " + suit[randomSuit]);
+        System.out.println();
 
     }
 
