@@ -495,6 +495,33 @@ public class  Notes {
         int randomRank = (int) (Math.random() * rank.length);
         System.out.println(rank[randomRank] + " of " + suit[randomSuit]);
         System.out.println();
+        //DATE 2/21/2018
+        //pg. 104
+        /*
+
+        Two dimensional arrays
+
+         */
+        int[][] twoDimensionalArrayExample; //Declaration
+        twoDimensionalArrayExample = new int[10][10]; //Creation
+        twoDimensionalArrayExample[4][4] = 10;//Adding values
+        System.out.println(twoDimensionalArrayExample[4][4]);
+        System.out.println();
+        //NOTE: Remember it can also be initiated as "int[][] array = new int[10][10];"
+        /*
+
+        Setting 2D array values at compile time
+
+         */
+        int[][] twoDimensionalArrayExampleTwo = {
+
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
+
+        };
+        System.out.println(twoDimensionalArrayExampleTwo[1][1]);
+        System.out.println();
 
     }
 

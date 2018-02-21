@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneThreeFourtythree(1.5);
+        oneFourFour();
 
     }
     public void test() {
@@ -1708,6 +1708,45 @@ f
 
         }
         System.out.println("Final Population: " + x);
+
+    }
+    //DATE 2/21/2018
+    /*
+
+    Exercise 1.4.1
+
+        Write a program that declares and initializes an array of a[] of size 1000 and accesses a[1000]. Does your program compile? What happens when you run it?
+
+        It gives an out of bounds exception, because arrays start at 0, so the array is 0 to 999, and 1000 is more than 999
+
+     */
+    public void oneFourOne() {
+
+        int[] a = new int[1000];
+        System.out.println(a[1000]);
+
+    }
+    /*
+
+    Exercise 1.4.2
+
+        Describe and explain what happens when you try to compile a program with the following statement:
+
+            int N = 1000;
+            int[] a = new int[N * N * N * N];
+
+        It gives a negative array size exception, as 1000 * 1000 * 1000 * 1000 exceeds the integer value limit, pushing it into negatives
+
+     */
+    public void oneFourTwo() {
+
+        int N = 1000;
+        int[] a = new int[N * N * N * N];
+
+    }
+    public void oneFourFour() {
+
+
 
     }
     public static void main(String args[]) {
