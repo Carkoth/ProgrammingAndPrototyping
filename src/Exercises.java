@@ -5,7 +5,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneFourFour();
+
 
     }
     public void test() {
@@ -1746,7 +1746,53 @@ f
     }
     public void oneFourFour() {
 
+        String placeHolder;
+        String[] array = {"Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9", "Item10"};
+        for (int i = 0; i < array.length / 2; i++) {
 
+            placeHolder = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = placeHolder;
+
+        }
+        for (String arrayLoop : array) {
+
+            System.out.println(arrayLoop);
+
+        }
+
+    }
+    /*
+
+    Exercise 1.4.5
+
+        What is wrong with the following code fragment?
+
+            int[] a;
+            for (int i = 0; i < 10; i++)
+                a[i] = i * i
+
+        The fragment doesn't allocate memory for the array
+
+     */
+    /*
+
+    Exercsie 1.4.6
+
+        Write a code that prints the contents of a two-dimensional boolean array, using * to represent true and a space to represent false. Include row and collumn numbers.
+
+     */
+    public void oneFourSix() {
+
+
+        boolean[][] booleanArray = {
+
+                {true, false, true},
+                {false, true, false},
+                {true, false, true}
+
+        };
+        System.out.println("012");
 
     }
     public static void main(String args[]) {
