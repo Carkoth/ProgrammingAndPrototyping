@@ -1,16 +1,17 @@
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
+import java.applet.Applet;
+import java.net.URL;
 
-public class Exercises {
+public class Exercises extends Applet{
 
     public Exercises() {
 
-
+        test();
 
     }
     public void test() {
 
-
+        newAudioClip()
 
     }
     //DATE 1/3/2018
@@ -1744,6 +1745,7 @@ f
         int[] a = new int[N * N * N * N];
 
     }
+    //DATE 2/22/18
     public void oneFourFour() {
 
         String placeHolder;
@@ -1777,7 +1779,7 @@ f
      */
     /*
 
-    Exercsie 1.4.6
+    Exercise 1.4.6
 
         Write a code that prints the contents of a two-dimensional boolean array, using * to represent true and a space to represent false. Include row and collumn numbers.
 
