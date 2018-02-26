@@ -1,17 +1,13 @@
 import java.util.concurrent.ThreadLocalRandom;
-import java.applet.Applet;
-import java.net.URL;
 
-public class Exercises extends Applet{
+public class Exercises {
 
     public Exercises() {
 
-        test();
+
 
     }
     public void test() {
-
-        newAudioClip()
 
     }
     //DATE 1/3/2018
@@ -1789,14 +1785,82 @@ f
 
         boolean[][] booleanArray = {
 
-                {true, false, true},
-                {false, true, false},
-                {true, false, true}
+                {true, false, true, false, true},
+                {false, true, false, true, false},
+                {true, false, true, false, true},
+                {false, true, false, true, false},
+                {true, false, true, false, true}
 
         };
-        System.out.println("012");
+        int row;
+        int column;
+        System.out.print(" ");
+        for (column = 0; column < booleanArray[0].length; column++) {
+
+            System.out.print(column);
+
+        }
+        System.out.println();
+        for (row = 0; row < booleanArray.length; row++) {
+
+            System.out.print(row);
+            for (column = 0; column < booleanArray[row].length; column++) {
+
+                if (booleanArray[row][column]) {
+
+                    System.out.print("*");
+
+                }
+                else {
+
+                    System.out.print(" ");
+
+                }
+
+            }
+            System.out.println();
+
+        }
 
     }
+    /*
+
+    Exercise 1.4.7
+
+        What does the following code fragment print
+
+            int[] a = new int[10];
+            for (int i = 0; i < 10; i++) {
+                a[i] = 9 - i;
+            }
+            for (int i = 0; i < 10; i++) {
+                a[i] = a[a[i]];
+            }
+            for (int i = 0; i < 10; i++) {
+                System.out.println(a[i]);
+            }
+
+        It prints a list of numbers going up to 4 and then back down.
+
+     */
+    /*
+
+    Exercise 1.4.8
+        What values does the following code put in the array a[]?
+
+            int N = 10;
+            int[] a = new int [N];
+            a[0] = 1;
+            a[1] = 1;
+            for (int i = 2; i < N; i++) {
+
+                a[i] = a[i - 1] + a[i - 2]
+
+            }
+
+        1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+
+     */
     public static void main(String args[]) {
 
         new Exercises();
