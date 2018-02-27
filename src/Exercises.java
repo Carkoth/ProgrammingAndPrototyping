@@ -4,7 +4,7 @@ public class Exercises {
 
     public Exercises() {
 
-
+        oneFourEleven();
 
     }
     public void test() {
@@ -1846,6 +1846,7 @@ f
     /*
 
     Exercise 1.4.8
+
         What values does the following code put in the array a[]?
 
             int N = 10;
@@ -1858,9 +1859,133 @@ f
 
             }
 
-        1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+        It prints 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, the Fibonacci
 
      */
+    /*
+
+    Exercise 1.4.9
+
+        What does the following code fragment print?
+
+            int[] a = {1, 2, 3};
+            int[] b = {1, 2, 3};
+            System.out.println(a == b);
+
+        It prints false, because a and b are not the same array
+
+     */
+    /*
+
+    Exercise 1.4.10
+
+        Write a program that takes an argument and deals that many poker hands (five cards each) from a shuffled deck, separated by blank lines.
+
+     */
+    public void oneFourTen(int numberOfHands) {
+
+        String[] deck = {
+
+                "Ace of Hearts", "Ace of Diamonds", "Ace of Spades", "Ace of Clubs",
+                "Two of Hearts", "Two of Diamonds", "Two of Spades", "Two of Clubs",
+                "Three of Hearts", "Three of Diamonds", "Three of Spades", "Three of Clubs",
+                "Four of Hearts", "Four of Diamonds", "Four of Spades", "Four of Clubs",
+                "Five of Hearts", "Five of Diamonds", "Five of Spades", "Five of Clubs",
+                "Six of Hearts", "Six of Diamonds", "Six of Spades", "Six of Clubs",
+                "Seven of Hearts", "Seven of Diamonds", "Seven of Spades", "Seven of Clubs",
+                "Eight of Hearts", "Eight of Diamonds", "Eight of Spades", "Eight of Clubs",
+                "Nine of Hearts", "Nine of Diamonds", "Nine of Spades", "Nine of Clubs",
+                "Ten of Hearts", "Ten of Diamonds", "Ten of Spades", "Ten of Clubs",
+                "Jack of Hearts", "Jack of Diamonds", "Jack of Spades", "Jack of Clubs",
+                "Queen of Hearts", "Queen of Diamonds", "Queen of Spades", "Queen of Clubs",
+                "King of Hearts", "King of Diamonds", "King of Spades", "King of Clubs"
+
+        };
+        for (int i = 0; i < 52; i++) {
+
+            int randomNumOne = ThreadLocalRandom.current().nextInt(0, 52);
+            int randomNumTwo = ThreadLocalRandom.current().nextInt(0, 52);
+            String holderVar = deck[randomNumOne];
+            deck[randomNumOne] = deck[randomNumTwo];
+            deck[randomNumTwo] = holderVar;
+
+        }
+        int cardNumber = 0;
+        for (int i = 0; i < numberOfHands; i++) {
+
+            for (int numberOfCardsInHand = 0; numberOfCardsInHand < 5; numberOfCardsInHand++, cardNumber++) {
+
+                System.out.println(deck[cardNumber]);
+
+            }
+            System.out.println();
+
+        }
+
+    }
+    /*
+
+    Exercise 1.4.11
+
+        Write code to create a two-dimensional array b[][] that is a copy of an existing two-dimensional array, under each of the following assumptions:
+
+            a. a[][] is square
+            b. a[][] is rectangular
+            c. a[][] may be ragged
+
+        You solution to b should work for a, and your solution to c should for both b and a, but your code should get progressively more complicated.
+
+     */
+    public void oneFourEleven() {
+
+        int[][] a = {
+
+                {1},
+                {2, 3},
+                {4},
+                {5, 6}
+
+        };
+        int row;
+        int column;
+        int maxLength = 0;
+        for (row = 0; row < a.length; row++) {
+
+            maxLength = Math.max(maxLength, a[row].length);
+
+        }
+        int[][] b = new int[a.length][maxLength];
+        for (row = 0; row < a.length; row++) {
+
+            for (column = 0; column < a[row].length; column++) {
+
+                b[row][column] = a[row][column];
+
+            }
+
+        }
+        for (row = 0; row < a.length; row++) {
+
+            for (column = 0; column < a[row].length; column++) {
+
+                System.out.print(a[row][column] + " ");
+
+            }
+            System.out.println();
+
+        }
+        System.out.println();
+        for (row = 0; row < b.length; row++) {
+
+            for (column = 0; column < a[row].length; column++) {
+
+                System.out.print(b[row][column] + " ");
+
+            }
+            System.out.println();
+
+        }
+    }
     public static void main(String args[]) {
 
         new Exercises();
