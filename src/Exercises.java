@@ -4,7 +4,7 @@ public class Exercises {
 
     public Exercises() {
 
-        oneFourTwelve();
+
 
     }
     public void test() {
@@ -1997,9 +1997,10 @@ f
 
         int[][] array = {
 
-                {0, 1, 2},
-                {3, 4, 5},
-                {6, 7, 8}
+                {0, 1, 2, 3},
+                {4, 5, 6, 7},
+                {8, 9, 10, 11},
+                {12, 13, 14, 15}
 
         };
         int row;
@@ -2008,19 +2009,13 @@ f
 
             for (column = 0; column < array[row].length; column++) {
 
-                if (row > array.length / 2 && column > array.length / 2) {
+                if (column > row) {
 
-                    break;
+                    int holder = array[row][column];
+                    array[row][column] = array[column][row];
+                    array[column][row] = holder;
 
                 }
-                int holder = array[row][column];
-                array[row][column] = array[column][row];
-                array[column][row] = holder;
-
-            }
-            if (row > array.length / 2 && column > array.length / 2) {
-
-                break;
 
             }
 
@@ -2030,6 +2025,96 @@ f
             for (column = 0; column < array[row].length; column++) {
 
                 System.out.print(array[row][column] + " ");
+
+            }
+            System.out.println();
+
+        }
+
+    }
+    /*
+
+    Exercise 1.4.13
+
+        Same code as exercise 1.4.12
+
+     */
+    /*
+
+    Exercise 1.4.14
+
+        Write a program that takes an integer N from the command line and creates an N-by-N boolean array a[][] such that a[i][j] is true if i and j are relatively prime (they have no common factors), and false otherwise. Use your solution to exercise 1.4.6 to print the array. Hint: Use sieving.
+
+     */
+    public void oneFourFourteen(int N) {
+
+        boolean[][] a = new boolean[N][N];
+        int i = 0; //Row
+        int j; //Column
+        while (i < N) {
+
+            j = 0;
+            while (j < N) {
+
+                boolean gcdSolved = false;
+                int gcd = 0;
+                int y = i + 1;
+                int x = j + 1;
+                while (!gcdSolved) {
+
+                    if (y % x == 0) {
+
+                        gcd = x;
+                        gcdSolved = true;
+
+                    } else if (x % y == 0) {
+
+                        gcd = y;
+                        gcdSolved = true;
+
+                    } else if (y > x) {
+
+                        y = y % x;
+
+                    } else if (x > y) {
+
+                        x = x % y;
+
+                    }
+
+                }
+                if (gcd == 1) {
+
+                    a[i][j] = true;
+
+                }
+                else {
+
+                    a[i][j] = false;
+
+                }
+                j++;
+
+            }
+            i++;
+
+        }
+        int row;
+        int column;
+        for (row = 0; row < a.length; row++) {
+
+            for (column = 0; column < a[row].length; column++) {
+
+                if (a[row][column]) {
+
+                    System.out.print(true + "   ");
+
+                }
+                else {
+
+                    System.out.print(false + "   ");
+
+                }
 
             }
             System.out.println();
