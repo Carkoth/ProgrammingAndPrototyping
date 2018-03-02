@@ -4,10 +4,178 @@ public class Exercises {
 
     public Exercises() {
 
-
+        test();
 
     }
     public void test() {
+
+        int powerLeft = 0;
+        int powerRight = 0;
+        int supportLeft = 0;
+        int supportRight = 0;
+        int pickLeft = 0;
+        int pickRight = 0;
+        int offensive = 0;
+        int defensive = 0;
+        int roaming = 0;
+        boolean[] classes = {
+
+                false, false, false, false, false, false, false, false, false
+                //Demoman, Heavy, Pyro, Engineer, Medic, Spy, Sniper, Scout, Soldier
+
+        };
+        String[] players = new String[6];
+        for (int playerNumber = 0; playerNumber < 6; playerNumber++) {
+
+            boolean playerSatisfied = false;
+            while (!playerSatisfied) {
+
+                int classChooser = ThreadLocalRandom.current().nextInt(1, 10);
+                switch (classChooser) {
+
+                    case 1: //Demoman
+
+                        if (powerLeft < 3 && powerRight < 3 && offensive < 3 && !classes[0]) {
+
+                            powerLeft++;
+                            powerRight++;
+                            offensive++;
+                            classes[0] = true;
+                            players[playerNumber] = "Demoman";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    case 2: //Heavy
+
+                        if (powerLeft < 3 && powerRight < 3 && defensive < 3 && !classes[1]) {
+
+                            powerLeft++;
+                            powerRight++;
+                            defensive++;
+                            classes[1] = true;
+                            players[playerNumber] = "Heavy";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    case 3: //Pyro
+
+                        if (powerRight < 3 && supportLeft < 3 && defensive < 3 && !classes[2]) {
+
+                            powerRight++;
+                            supportLeft++;
+                            defensive++;
+                            classes[2] = true;
+                            players[playerNumber] = "Pyro";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    case 4: //Engineer
+
+                        if (supportLeft < 3 && supportRight < 3 && defensive < 3 && !classes[3]) {
+
+                            supportLeft++;
+                            supportRight++;
+                            defensive++;
+                            classes[3] = true;
+                            players[playerNumber] = "Engineer";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    case 5: //Medic
+
+                        if (supportLeft < 3 && supportRight < 3 && roaming < 3 && !classes[4]) {
+
+                            supportLeft++;
+                            supportRight++;
+                            roaming++;
+                            classes[4] = true;
+                            players[playerNumber] = "Medic";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    case 6: //Spy
+
+                        if (supportRight < 3 && pickLeft < 3 && roaming < 3 && !classes[5]) {
+
+                            supportRight++;
+                            pickLeft++;
+                            roaming++;
+                            classes[5] = true;
+                            players[playerNumber] = "Spy";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    case 7: //Sniper
+
+                        if (pickRight < 3 && pickLeft < 3 && roaming < 3 && !classes[6]) {
+
+                            pickRight++;
+                            pickLeft++;
+                            roaming++;
+                            classes[6] = true;
+                            players[playerNumber] = "Sniper";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    case 8: //Scout
+
+                        if (pickRight < 3 && pickLeft < 3 && offensive < 3 && !classes[7]) {
+
+                            pickRight++;
+                            pickLeft++;
+                            offensive++;
+                            classes[7] = true;
+                            players[playerNumber] = "Scout";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    case 9: //Soldier
+
+                        if (pickRight < 3 && powerLeft < 3 && offensive < 3 && !classes[8]) {
+
+                            pickRight++;
+                            powerLeft++;
+                            offensive++;
+                            classes[8] = true;
+                            players[playerNumber] = "Soldier";
+                            playerSatisfied = true;
+
+                        }
+                        break;
+
+                    default:
+
+                        System.out.println("Something went wrong");
+                        break;
+
+
+                }
+
+            }
+
+        }
+        for (int i = 0; i < players.length; i++) {
+
+            System.out.println(players[i]);
+
+        }
+
 
     }
     //DATE 1/3/2018
