@@ -4,177 +4,11 @@ public class Exercises {
 
     public Exercises() {
 
-        test();
+
 
     }
     public void test() {
 
-        int powerLeft = 0;
-        int powerRight = 0;
-        int supportLeft = 0;
-        int supportRight = 0;
-        int pickLeft = 0;
-        int pickRight = 0;
-        int offensive = 0;
-        int defensive = 0;
-        int roaming = 0;
-        boolean[] classes = {
-
-                false, false, false, false, false, false, false, false, false
-                //Demoman, Heavy, Pyro, Engineer, Medic, Spy, Sniper, Scout, Soldier
-
-        };
-        String[] players = new String[6];
-        for (int playerNumber = 0; playerNumber < 6; playerNumber++) {
-
-            boolean playerSatisfied = false;
-            while (!playerSatisfied) {
-
-                int classChooser = ThreadLocalRandom.current().nextInt(1, 10);
-                switch (classChooser) {
-
-                    case 1: //Demoman
-
-                        if (powerLeft < 3 && powerRight < 3 && offensive < 3 && !classes[0]) {
-
-                            powerLeft++;
-                            powerRight++;
-                            offensive++;
-                            classes[0] = true;
-                            players[playerNumber] = "Demoman";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    case 2: //Heavy
-
-                        if (powerLeft < 3 && powerRight < 3 && defensive < 3 && !classes[1]) {
-
-                            powerLeft++;
-                            powerRight++;
-                            defensive++;
-                            classes[1] = true;
-                            players[playerNumber] = "Heavy";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    case 3: //Pyro
-
-                        if (powerRight < 3 && supportLeft < 3 && defensive < 3 && !classes[2]) {
-
-                            powerRight++;
-                            supportLeft++;
-                            defensive++;
-                            classes[2] = true;
-                            players[playerNumber] = "Pyro";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    case 4: //Engineer
-
-                        if (supportLeft < 3 && supportRight < 3 && defensive < 3 && !classes[3]) {
-
-                            supportLeft++;
-                            supportRight++;
-                            defensive++;
-                            classes[3] = true;
-                            players[playerNumber] = "Engineer";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    case 5: //Medic
-
-                        if (supportLeft < 3 && supportRight < 3 && roaming < 3 && !classes[4]) {
-
-                            supportLeft++;
-                            supportRight++;
-                            roaming++;
-                            classes[4] = true;
-                            players[playerNumber] = "Medic";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    case 6: //Spy
-
-                        if (supportRight < 3 && pickLeft < 3 && roaming < 3 && !classes[5]) {
-
-                            supportRight++;
-                            pickLeft++;
-                            roaming++;
-                            classes[5] = true;
-                            players[playerNumber] = "Spy";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    case 7: //Sniper
-
-                        if (pickRight < 3 && pickLeft < 3 && roaming < 3 && !classes[6]) {
-
-                            pickRight++;
-                            pickLeft++;
-                            roaming++;
-                            classes[6] = true;
-                            players[playerNumber] = "Sniper";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    case 8: //Scout
-
-                        if (pickRight < 3 && pickLeft < 3 && offensive < 3 && !classes[7]) {
-
-                            pickRight++;
-                            pickLeft++;
-                            offensive++;
-                            classes[7] = true;
-                            players[playerNumber] = "Scout";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    case 9: //Soldier
-
-                        if (pickRight < 3 && powerLeft < 3 && offensive < 3 && !classes[8]) {
-
-                            pickRight++;
-                            powerLeft++;
-                            offensive++;
-                            classes[8] = true;
-                            players[playerNumber] = "Soldier";
-                            playerSatisfied = true;
-
-                        }
-                        break;
-
-                    default:
-
-                        System.out.println("Something went wrong");
-                        break;
-
-
-                }
-
-            }
-
-        }
-        for (int i = 0; i < players.length; i++) {
-
-            System.out.println(players[i]);
-
-        }
 
 
     }
@@ -1945,7 +1779,7 @@ f
 
     Exercise 1.4.6
 
-        Write a code that prints the contents of a two-dimensional boolean array, using * to represent true and a space to represent false. Include row and collumn numbers.
+        Write a code that prints the contents of a two-dimensional boolean array, using * to represent true and a space to represent false. Include row and column numbers.
 
      */
     public void oneFourSix() {
@@ -2286,6 +2120,116 @@ f
 
             }
             System.out.println();
+
+        }
+
+    }
+    //DATE 3/6/2018
+    /*
+
+    Exercise 1.4.20
+
+        Dice simulation. The following code computes the exact probability distribution for the sum of two dice.
+
+            double[] dist = new double [13];
+            for (int i = 1; i <= 6; i++) {
+
+                for (int j = 1; j <= 6; j++) {
+
+                    dist[i + j] += 1.0;
+
+                }
+
+            }
+            for (int k = 1; k <= 12; k++) {
+
+                dist[k] /= 36.0;
+
+            }
+
+        The value dist[k] is the probability that the dice sum to k. Run experiments to validate this calculation simulating N dice throws, keeping track of the frequencies of occurrence of each value when you have to compute the sum of two random integers between 1 and 6. How large does N have to be before your empirical results match the exact results to three decimal places?
+
+        Around 10 million
+
+     */
+    public void oneFourTwenty(int N) {
+
+        double[] dist = new double [13];
+        for (int i = 1; i <= 6; i++) {
+
+            for (int j = 1; j <= 6; j++) {
+
+                dist[i + j] += 1.0;
+
+            }
+
+        }
+        for (int k = 1; k <= 12; k++) {
+
+            dist[k] /= 36.0;
+
+        }
+        System.out.println("Calculated probabilities (Going for 0 to 12)");
+        for (int i = 0; i <= dist.length - 1; i++) {
+
+            System.out.println(dist[i] * 100);
+
+        }
+        System.out.println();
+        double[] occurrences = {
+
+                0, 0, 0, 0,
+                0, 0, 0, 0,
+                0, 0, 0, 0,
+                0
+
+        };
+        for (int i = 1; i <= N; i++) {
+
+            int dice1 = ThreadLocalRandom.current().nextInt(1, 7);
+            int dice2 = ThreadLocalRandom.current().nextInt(1, 7);
+            occurrences[dice1 + dice2]++;
+
+        }
+        System.out.println("Tested percentages (Going from 0 to 12)");
+        for (int i = 0; i <= 12; i++) {
+
+            System.out.println(occurrences[i] / N * 100);
+
+        }
+
+    }
+    /*
+
+    Exercise 1.4.21
+
+        Longest plateau Given an array of integers, find the length and location of the longest contiguous sequence of equal values where the values of the elements just before and after the sequence are smaller.
+
+     */
+    public void oneFourTwentyone() {
+
+        int locationStart;
+        int locationEnd;
+        int possibleLocationStart;
+        int[] integers = {
+
+                1, 2, 2, 2, 1
+
+        };
+        for (int i = 1; i <= integers.length; i++) {
+
+            possibleLocationStart = integers[i];
+            if (integers[i - 1] > integers[i]) {
+
+                continue;
+
+            }
+            int k = i;
+            while (integers[k] == integers[k + 1]) {
+
+
+
+            }
 
         }
 
