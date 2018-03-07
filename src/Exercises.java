@@ -2208,32 +2208,57 @@ f
      */
     public void oneFourTwentyone() {
 
-        int locationStart;
-        int locationEnd;
-        int possibleLocationStart;
+        int startLocation = 0;
+        int endLocation = 0;
+        int possibleStartLocation;
+        int possibleEndLocation;
         int[] integers = {
 
-                1, 2, 2, 2, 1
+                2, 1, 3, 4, 1,
+                2, 2, 2, 1, 4,
+                5, 5, 5, 5, 4,
+                5, 5, 5, 5, 6,
 
         };
-        for (int i = 1; i <= integers.length; i++) {
+        for (int i = 1; i < integers.length - 1; i++) {
 
-            possibleLocationStart = integers[i];
+            possibleStartLocation = i;
             if (integers[i - 1] > integers[i]) {
 
                 continue;
 
             }
             int k = i;
-            while (integers[k] == integers[k + 1]) {
+            while (integers[k + 1] == integers[k]) {
 
+                k++;
 
+            }
+            possibleEndLocation = k;
+            if (integers[possibleEndLocation  + 1] > integers[possibleEndLocation]) {
+
+                continue;
+
+            }
+            if (possibleEndLocation - possibleStartLocation > endLocation - startLocation) {
+
+                startLocation = possibleStartLocation;
+                endLocation = possibleEndLocation;
 
             }
 
+
         }
+        System.out.println("Start Location: " + startLocation);
+        System.out.println("End Location: " + endLocation);
+        System.out.println("Length: " + (endLocation - startLocation + 1));
 
     }
+    /*
+
+    Empirical shuffle check. Run computational experiments to check that our shuffling code works as advertised. Write a program that takes command-line arguments M and N, does N shuffles of an array size M that is initialized with a[i] = i before each shuffle, and prints an M-by-M table such that row i gives the number of times i wound up in the position for j for all j. All entries in the array should be close to N/M.
+
+     */
     public static void main(String args[]) {
 
         new Exercises();
